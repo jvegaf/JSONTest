@@ -22,7 +22,7 @@ int main(int argc, const char * argv[])
         NSLog(@"DICTIONARY %@",questionDict);
         // transform to json
         NSError *error;
-        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:questionDict options:NSJSONWritingPrettyPrinted error:&error];
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:questionDict options:kNilOptions error:&error];
         NSLog(@"JSON DATA: %@",[[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding]);
         // prepare JSON request
         NSURL *url = [NSURL URLWithString:@"http://tosukapetaka.dyndns.info/tt-rss/api/"];
@@ -58,9 +58,21 @@ int main(int argc, const char * argv[])
             NSLog(@"Error al parsear JSON: %@",error.localizedDescription);
         }
         
-        NSString *newJSONRequest = [NSString stringWithFormat:@"{'sid':'%@','op':'isLoggedIn'}",session_id];
+        NSString *newJSONRequest = [NSString stringWithFormat:@"{\"sid\":\"%@\",\"op\":\"isLoggedIn\"}",session_id];
         NSLog(@"new request: %@",newJSONRequest);
+        jsonData = [newJSONRequest dataUsingEncoding:NSUTF8StringEncoding];
         // hacer una peticion isLoggedIn
+        request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
+        [request setHTTPMethod:@"POST"];
+        [request setHTTPBody:jsonData];
+        data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+        
+        if (data != nil) {
+            NSLog(@"NEW RESPONSE: %@",[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);
+        }
+        else {
+            NSLog(@"ERROR: %@",error.localizedDescription);
+        }
         
      
     }

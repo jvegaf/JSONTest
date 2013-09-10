@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1003719D-C29A-46C8-9CFE-688B1E46A3CB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JSONTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D71755E9-80C0-48AD-9FE9-66835DD66218</key>
+		<string>https://github.com/jvegaf/JSONTest.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JSONTest.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D71755E9-80C0-48AD-9FE9-66835DD66218</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jvegaf/JSONTest.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D71755E9-80C0-48AD-9FE9-66835DD66218</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D71755E9-80C0-48AD-9FE9-66835DD66218</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JSONTest</string>
+		</dict>
+	</array>
+</dict>
+</plist>
