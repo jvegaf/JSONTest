@@ -23,6 +23,7 @@
 @property (nonatomic,copy) NSString *getCategories;
 @property (nonatomic,copy) NSString *getHeadlines;
 @property (nonatomic,copy) NSString *getArticle;
+@property (nonatomic,copy) NSString *fetchData;
 @property (nonatomic,copy) NSString *unsubscribeFeed;
 
 @property (nonatomic,strong) NSArray *keys;
@@ -31,11 +32,14 @@
 @property (nonatomic,copy) NSString *session_id;
 @property (nonatomic,strong) NSURL *url;
 
+@property (nonatomic,strong) NSMutableArray *categories;
+
 
 
 -(void)startConnection;
 -(void)stopConectionWithID;
 -(void)getCategoriesWithID;
 -(void)isLoggedInWithID;
+-(void)getFeedsWithID;
 
 @end

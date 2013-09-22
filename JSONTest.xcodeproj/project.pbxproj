@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		823A5DA917E9546A0099B5B0 /* TTRSSCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 823A5DA817E9546A0099B5B0 /* TTRSSCategoryModel.m */; };
 		8262888617D940F200D0B6A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262888517D940F200D0B6A0 /* Foundation.framework */; };
 		8262888917D940F200D0B6A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8262888817D940F200D0B6A0 /* main.m */; };
 		8262888D17D940F200D0B6A0 /* JSONTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8262888C17D940F200D0B6A0 /* JSONTest.1 */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		823A5DA717E9546A0099B5B0 /* TTRSSCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRSSCategoryModel.h; sourceTree = "<group>"; };
+		823A5DA817E9546A0099B5B0 /* TTRSSCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRSSCategoryModel.m; sourceTree = "<group>"; };
 		8262888217D940F200D0B6A0 /* JSONTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JSONTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8262888517D940F200D0B6A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8262888817D940F200D0B6A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,6 +100,8 @@
 			children = (
 				82F341B217E3D8F1009B8C9A /* TTRSSModel.h */,
 				82F341B317E3D8F1009B8C9A /* TTRSSModel.m */,
+				823A5DA717E9546A0099B5B0 /* TTRSSCategoryModel.h */,
+				823A5DA817E9546A0099B5B0 /* TTRSSCategoryModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				823A5DA917E9546A0099B5B0 /* TTRSSCategoryModel.m in Sources */,
 				82F341B417E3D8F1009B8C9A /* TTRSSModel.m in Sources */,
 				8262888917D940F200D0B6A0 /* main.m in Sources */,
 			);

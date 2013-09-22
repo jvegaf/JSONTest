@@ -7,13 +7,15 @@
 //
 
 #import "TTRSSModel.h"
+#import "TTRSSCategoryModel.h"
 
 @implementation TTRSSModel
 
-@synthesize op,login,user,password,admin,sid,isLoggedIn,logout,getUnread,getFeeds,getCategories,getHeadlines,getArticle,unsubscribeFeed,url,keys,objects,session_id,questionDict;
+@synthesize op,login,user,password,admin,sid,isLoggedIn,logout,getUnread,getFeeds,getCategories,getHeadlines,getArticle,fetchData,unsubscribeFeed,url,keys,objects,session_id,questionDict,categories;
 
 
--(id) init{
+-(id) init
+{
     if ((self = [super init])){
         op = @"op";
         login = @"login";
@@ -28,13 +30,15 @@
         getCategories = @"getCategories";
         getHeadlines = @"getHeadlines";
         getArticle = @"getArticle";
+        fetchData = @"fetchData";
         unsubscribeFeed = @"unsubscribeFeed";
         url = [NSURL URLWithString:@"http://tosukapetaka.dyndns.info/tt-rss/api/"];
     }
     return self;
 }
 
--(void)startConnection {
+-(void)startConnection
+{
     // prepare the dictionary
     keys = @[op,user,password];
     objects = @[login,admin,admin];
@@ -79,7 +83,8 @@
     }
 }
 
--(void)stopConectionWithID{
+-(void)stopConectionWithID
+{
     keys = @[sid,op];
     objects = @[session_id,logout];
     questionDict = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
@@ -104,7 +109,8 @@
     
     
 }
--(void)getCategoriesWithID{
+-(void)getCategoriesWithID
+{
     keys = @[sid,op];
     objects = @[session_id,getCategories];
     questionDict = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
@@ -119,7 +125,23 @@
     NSURLResponse * response = [[NSURLResponse alloc] init];
     NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
     if (data != nil) {
-        NSLog(@"getCategories RESPONSE: %@",[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);;
+        NSLog(@"getCategories RESPONSE: %@ \n\n\n\n\n\n",[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);;
+        NSDictionary *JSONObjects = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+        //NSLog(@"%@",JSONObjects);
+        NSArray *contents = [JSONObjects objectForKey:@"content"];
+        //test
+//		NSLog(@"contents count: %lu",[contents count]);
+//      NSLog(@"content 1 = %@",[contents objectAtIndex:0]);
+        categories = [[NSMutableArray alloc]init];
+        for (NSDictionary *category in contents) {
+            //Create categoy object
+            TTRSSCategoryModel *cat = [[TTRSSCategoryModel alloc]initWithDictionary:category];
+            //add object to array
+            [categories addObject:cat];
+            NSLog(@"categoy added");
+        }
+        //Test
+        NSLog(@"number of categories in Array: %lu",[categories count]);
         
     }
     else {
@@ -128,7 +150,8 @@
     
 }
 
--(void)isLoggedInWithID{
+-(void)isLoggedInWithID
+{
     keys = @[sid,op];
     objects = @[session_id,isLoggedIn];
     questionDict = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
@@ -150,6 +173,33 @@
         NSLog(@"Error: %@",error.localizedDescription);
     }
 }
+
+-(void)getFeedsWithID
+{
+    keys = @[sid,op,@"cat_id"];
+    objects = @[session_id,getFeeds,@"0"];
+    questionDict = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:questionDict
+                                                       options:kNilOptions error:&error];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+                                                           cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                                       timeoutInterval:60.0];
+    [request setHTTPMethod:@"POST"];
+    [request setHTTPBody:jsonData];
+    NSURLResponse * response = [[NSURLResponse alloc] init];
+    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    if (data != nil) {
+        NSLog(@"getFeeds RESPONSE: %@\n\n\n\n",[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);;
+        NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+        NSLog(@"getFeeds Dict = %@",dictionary);
+        
+    }
+    else {
+        NSLog(@"Error: %@",error.localizedDescription);
+    }
+}
+
 
 
 
