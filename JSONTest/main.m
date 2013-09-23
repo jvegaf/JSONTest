@@ -19,6 +19,7 @@ int main(int argc, const char * argv[])
         [prueba isLoggedInWithID];
         [prueba getCategoriesWithID];
         [prueba getFeedsWithID];
+        [prueba getHeadlinesWithID];
         [prueba stopConectionWithID];
         //[prueba isLoggedInWithID];
      

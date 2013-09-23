@@ -177,7 +177,7 @@
 -(void)getFeedsWithID
 {
     keys = @[sid,op,@"cat_id"];
-    objects = @[session_id,getFeeds,@"0"];
+    objects = @[session_id,getFeeds,@"-4"];
     questionDict = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:questionDict
@@ -200,6 +200,31 @@
     }
 }
 
+-(void)getHeadlinesWithID
+{
+    keys = @[sid,op,@"feed_id"];
+    objects = @[session_id,getHeadlines,@"7"];
+    questionDict = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:questionDict
+                                                       options:kNilOptions error:&error];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+                                                           cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                                       timeoutInterval:60.0];
+    [request setHTTPMethod:@"POST"];
+    [request setHTTPBody:jsonData];
+    NSURLResponse * response = [[NSURLResponse alloc] init];
+    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    if (data != nil) {
+        NSLog(@"getHeadlines RESPONSE: %@\n\n\n\n",[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);;
+        NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+        NSLog(@"getHeadlines Dict = %@",dictionary);
+        
+    }
+    else {
+        NSLog(@"Error: %@",error.localizedDescription);
+    }
+}
 
 
 

@@ -41,5 +41,6 @@
 -(void)getCategoriesWithID;
 -(void)isLoggedInWithID;
 -(void)getFeedsWithID;
+-(void)getHeadlinesWithID;
 
 @end
