@@ -11,15 +11,15 @@
 @interface TTRSSCategoryModel : NSObject
 
 @property (nonatomic,copy) NSString *title;
-@property (nonatomic) NSUInteger catID;
-@property (nonatomic) NSUInteger unread;
-@property (nonatomic) NSUInteger orderID;
+@property (nonatomic) NSInteger catID;
+@property (nonatomic) NSInteger unread;
+@property (nonatomic) NSInteger orderID;
 
 
--(id)initWithCatID:(NSUInteger)aCatid
+-(id)initWithCatID:(NSInteger)aCatid
              title:(NSString *)aTitle
-            unread:(NSUInteger)aUnread
-           orderid:(NSUInteger)aOrder;
+            unread:(NSInteger)aUnread
+           orderid:(NSInteger)aOrder;
 
 
 -(id)initWithDictionary:(NSDictionary *)aDict;

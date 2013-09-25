@@ -203,7 +203,7 @@
 -(void)getHeadlinesWithID
 {
     keys = @[sid,op,@"feed_id"];
-    objects = @[session_id,getHeadlines,@"7"];
+    objects = @[session_id,getHeadlines,@"4"];
     questionDict = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:questionDict

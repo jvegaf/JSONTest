@@ -11,6 +11,7 @@
 		8262888617D940F200D0B6A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262888517D940F200D0B6A0 /* Foundation.framework */; };
 		8262888917D940F200D0B6A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8262888817D940F200D0B6A0 /* main.m */; };
 		8262888D17D940F200D0B6A0 /* JSONTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8262888C17D940F200D0B6A0 /* JSONTest.1 */; };
+		828720A817F262BE009115E5 /* TTRSSFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 828720A717F262BE009115E5 /* TTRSSFeedModel.m */; };
 		82F341B417E3D8F1009B8C9A /* TTRSSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F341B317E3D8F1009B8C9A /* TTRSSModel.m */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,8 @@
 		8262888817D940F200D0B6A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8262888B17D940F200D0B6A0 /* JSONTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSONTest-Prefix.pch"; sourceTree = "<group>"; };
 		8262888C17D940F200D0B6A0 /* JSONTest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = JSONTest.1; sourceTree = "<group>"; };
+		828720A617F262BE009115E5 /* TTRSSFeedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRSSFeedModel.h; sourceTree = "<group>"; };
+		828720A717F262BE009115E5 /* TTRSSFeedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRSSFeedModel.m; sourceTree = "<group>"; };
 		82F341B217E3D8F1009B8C9A /* TTRSSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRSSModel.h; sourceTree = "<group>"; };
 		82F341B317E3D8F1009B8C9A /* TTRSSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRSSModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +105,8 @@
 				82F341B317E3D8F1009B8C9A /* TTRSSModel.m */,
 				823A5DA717E9546A0099B5B0 /* TTRSSCategoryModel.h */,
 				823A5DA817E9546A0099B5B0 /* TTRSSCategoryModel.m */,
+				828720A617F262BE009115E5 /* TTRSSFeedModel.h */,
+				828720A717F262BE009115E5 /* TTRSSFeedModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				828720A817F262BE009115E5 /* TTRSSFeedModel.m in Sources */,
 				823A5DA917E9546A0099B5B0 /* TTRSSCategoryModel.m in Sources */,
 				82F341B417E3D8F1009B8C9A /* TTRSSModel.m in Sources */,
 				8262888917D940F200D0B6A0 /* main.m in Sources */,

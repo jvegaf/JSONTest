@@ -8,12 +8,15 @@
 
 #import "TTRSSCategoryModel.h"
 
+
 @implementation TTRSSCategoryModel
 
--(id)initWithCatID:(NSUInteger)aCatid
+
+
+-(id)initWithCatID:(NSInteger)aCatid
              title:(NSString *)aTitle
-            unread:(NSUInteger)aUnread
-           orderid:(NSUInteger)aOrder
+            unread:(NSInteger)aUnread
+           orderid:(NSInteger)aOrder
 {
     if (self = [super init]) {
         _catID = aCatid;
@@ -28,10 +31,10 @@
 
 -(id)initWithDictionary:(NSDictionary *)aDict
 {
-    return [self initWithCatID:[aDict objectForKey:@"catID"]
+    return [self initWithCatID:[[aDict objectForKey:@"catID"]intValue]
                          title:[aDict objectForKey:@"title"]
-                        unread:[aDict objectForKey:@"unread"]
-                       orderid:[aDict objectForKey:@"orderID"]];
+                        unread:[[aDict objectForKey:@"unread"]intValue]
+                       orderid:[[aDict objectForKey:@"orderID"]intValue]];
 
 }
 
