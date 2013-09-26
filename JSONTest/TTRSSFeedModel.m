@@ -33,16 +33,16 @@
     return self;
 }
 
--(id)initWhitDictionary:(NSDictionary *)aDict
+-(id)initWithDictionary:(NSDictionary *)aDict
 {
-    return [self initWithFeedURL:[aDict objectForKey:@"feedURL"]
+    return [self initWithFeedURL:[aDict objectForKey:@"feed_url"]
                            title:[aDict objectForKey:@"title"]
-                          feedID:[[aDict objectForKey:@"feedID"]intValue]
+                          feedID:[[aDict objectForKey:@"feed_id"]intValue]
                           unread:[[aDict objectForKey:@"unread"]intValue]
-                         hasIcon:[[aDict objectForKey:@"hasIcon"]boolValue]
-                           catID:[[aDict objectForKey:@"catID"]intValue]
-                     lastUpdated:[[aDict objectForKey:@"lastUpdated"]intValue]
-                         orderID:[[aDict objectForKey:@"orderID"]intValue]];
+                         hasIcon:[[aDict objectForKey:@"has_icon"]boolValue]
+                           catID:[[aDict objectForKey:@"cat_id"]intValue]
+                     lastUpdated:[[aDict objectForKey:@"last_updated"]intValue]
+                         orderID:[[aDict objectForKey:@"order_id"]intValue]];
 }
 
 

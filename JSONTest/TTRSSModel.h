@@ -33,6 +33,9 @@
 @property (nonatomic,strong) NSURL *url;
 
 @property (nonatomic,strong) NSMutableArray *categories;
+@property (nonatomic,strong) NSMutableArray *feeds;
+@property (nonatomic,strong) NSMutableArray *headlines;
+
 
 
 

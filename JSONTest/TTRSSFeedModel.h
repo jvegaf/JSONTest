@@ -29,7 +29,7 @@
          lastUpdated:(NSInteger)aLastUpdated
              orderID:(NSInteger)aOrderID ;
 
--(id)initWhitDictionary:(NSDictionary *)aDict;
+-(id)initWithDictionary:(NSDictionary *)aDict;
 
 
 @end

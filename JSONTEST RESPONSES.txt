@@ -1,934 +1,594 @@
-2013-09-23 02:48:48.371 JSONTest[14544:303] RESPONSE: {"seq":0,"status":0,"content":{"session_id":"mm789fus2592k3j5m21fmtqig7","api_level":7}}
-2013-09-23 02:48:48.373 JSONTest[14544:303] session id = mm789fus2592k3j5m21fmtqig7
-2013-09-23 02:48:48.865 JSONTest[14544:303] isLoggedIn RESPONSE: {"seq":0,"status":0,"content":{"status":true}}
-2013-09-23 02:48:49.284 JSONTest[14544:303] getCategories RESPONSE: {"seq":0,"status":0,"content":[{"id":"1","title":"DOMOTICA","unread":25,"order_id":0},{"id":"2","title":"Apple","unread":112,"order_id":0},{"id":"3","title":"PERSONAL","unread":162,"order_id":0},{"id":"4","title":"Linux","unread":300,"order_id":0},{"id":"5","title":"TECHNOLOGY","unread":138,"order_id":0},{"id":"6","title":"GeekThings","unread":11,"order_id":0},{"id":"7","title":"DEVELOPMENT","unread":106,"order_id":0},{"id":-1,"title":"Special","unread":56},{"id":0,"title":"Uncategorized","unread":114}]} 
+2013-09-26 05:07:42.235 JSONTest[138:303] RESPONSE: {"seq":0,"status":0,"content":{"session_id":"ress7mkr6q4avmk3vpfukm79m7","api_level":7}}
+2013-09-26 05:07:42.236 JSONTest[138:303] session id = ress7mkr6q4avmk3vpfukm79m7
+2013-09-26 05:07:42.627 JSONTest[138:303] isLoggedIn RESPONSE: {"seq":0,"status":0,"content":{"status":true}}
+2013-09-26 05:07:43.052 JSONTest[138:303] getCategories RESPONSE: {"seq":0,"status":0,"content":[{"id":"1","title":"DOMOTICA","unread":25,"order_id":0},{"id":"2","title":"Apple","unread":213,"order_id":0},{"id":"3","title":"PERSONAL","unread":163,"order_id":0},{"id":"4","title":"Linux","unread":346,"order_id":0},{"id":"5","title":"TECHNOLOGY","unread":284,"order_id":0},{"id":"6","title":"GeekThings","unread":18,"order_id":0},{"id":"7","title":"DEVELOPMENT","unread":111,"order_id":0},{"id":-1,"title":"Special","unread":105},{"id":0,"title":"Uncategorized","unread":161}]} 
 
 
 
 
 
-2013-09-23 02:48:49.285 JSONTest[14544:303] categoy added
-2013-09-23 02:48:49.286 JSONTest[14544:303] categoy added
-2013-09-23 02:48:49.286 JSONTest[14544:303] categoy added
-2013-09-23 02:48:49.286 JSONTest[14544:303] categoy added
-2013-09-23 02:48:49.287 JSONTest[14544:303] categoy added
-2013-09-23 02:48:49.287 JSONTest[14544:303] categoy added
-2013-09-23 02:48:49.288 JSONTest[14544:303] categoy added
-2013-09-23 02:48:49.288 JSONTest[14544:303] categoy added
-2013-09-23 02:48:49.289 JSONTest[14544:303] categoy added
-2013-09-23 02:48:49.289 JSONTest[14544:303] number of categories in Array: 9
-2013-09-23 02:48:49.802 JSONTest[14544:303] getFeeds RESPONSE: {"seq":0,"status":0,"content":[{"id":-1,"title":"Starred articles","unread":"0","cat_id":-1},{"id":-2,"title":"Published articles","unread":"0","cat_id":-1},{"id":-3,"title":"Fresh articles","unread":"56","cat_id":-1},{"id":-4,"title":"All articles","unread":"968","cat_id":-1},{"id":-6,"title":"Recently read","unread":0,"cat_id":-1},{"id":0,"title":"Archived articles","unread":"0","cat_id":-1},{"feed_url":"http:\/\/damedinalvarez.wordpress.com\/feed\/","title":"0xDA_bit","id":59,"unread":10,"has_icon":true,"cat_id":0,"last_updated":1379895045,"order_id":0},{"feed_url":"http:\/\/feeds.feedburner.com\/m3drano","title":"Core dumped","id":60,"unread":7,"has_icon":true,"cat_id":0,"last_updated":1379895099,"order_id":0},{"feed_url":"http:\/\/www.elblogsalmon.com\/index.xml","title":"Elblogsalmon","id":61,"unread":27,"has_icon":true,"cat_id":0,"last_updated":1379895082,"order_id":0},{"feed_url":"http:\/\/nsscreencast.com\/feed","title":"NSScreencast (free videos)","id":63,"unread":18,"has_icon":true,"cat_id":0,"last_updated":1379895095,"order_id":0},{"feed_url":"http:\/\/tt-rss.org\/forum\/rss.php","title":"Tiny Tiny RSS: Forum","id":2,"unread":42,"has_icon":true,"cat_id":0,"last_updated":1379894436,"order_id":0},{"feed_url":"http:\/\/tt-rss.org\/releases.rss","title":"Tiny Tiny RSS: New Releases","id":1,"unread":5,"has_icon":true,"cat_id":0,"last_updated":1379894413,"order_id":0},{"feed_url":"http:\/\/torcelly.com\/?feed=rss","title":"Torcelly","id":62,"unread":5,"has_icon":false,"cat_id":0,"last_updated":1379895083,"order_id":0},{"feed_url":"http:\/\/muyraspi.blogspot.com\/feeds\/posts\/default","title":"Mis experiencias con la Raspberry Pi","id":3,"unread":25,"has_icon":true,"cat_id":1,"last_updated":1379894436,"order_id":0},{"feed_url":"http:\/\/9to5mac.com\/feed\/","title":"9to5Mac","id":6,"unread":16,"has_icon":true,"cat_id":2,"last_updated":1379894610,"order_id":0},{"feed_url":"http:\/\/feeds.weblogssl.com\/applesfera","title":"Applesfera","id":5,"unread":25,"has_icon":true,"cat_id":2,"last_updated":1379894561,"order_id":0},{"feed_url":"http:\/\/es.appleweblog.com\/feed\/","title":"AppleWeblog","id":8,"unread":28,"has_icon":true,"cat_id":2,"last_updated":1379894631,"order_id":0},{"feed_url":"http:\/\/feeds.feedburner.com\/ipadsfera","title":"iPadSfera","id":4,"unread":13,"has_icon":true,"cat_id":2,"last_updated":1379896215,"order_id":0},{"feed_url":"http:\/\/www.revistamactoday.com\/feed","title":"MacToday","id":7,"unread":10,"has_icon":true,"cat_id":2,"last_updated":1379894620,"order_id":0},{"feed_url":"http:\/\/minimalmac.com\/rss","title":"Minimal Mac","id":9,"unread":20,"has_icon":true,"cat_id":2,"last_updated":1379894646,"order_id":0},{"feed_url":"http:\/\/bilalh.github.com\/feed\/","title":"Bilal Syed Hussain","id":19,"unread":16,"has_icon":false,"cat_id":3,"last_updated":1379894736,"order_id":0},{"feed_url":"http:\/\/blog.raulperezanton.com\/feed\/","title":"Blog de Ra\u00fal P\u00e9rez","id":21,"unread":11,"has_icon":false,"cat_id":3,"last_updated":1379894738,"order_id":0},{"feed_url":"http:\/\/feeds.feedburner.com\/ficklebits?format=xml","title":"Fickle Bits","id":18,"unread":20,"has_icon":true,"cat_id":3,"last_updated":1379894464,"order_id":0},{"feed_url":"http:\/\/feeds.feedburner.com\/dfreniche","title":"freniche.com: iPhone, Java, Macs, Linux...","id":12,"unread":15,"has_icon":false,"cat_id":3,"last_updated":1379894697,"order_id":0},{"feed_url":"http:\/\/hackaya.tumblr.com\/rss","title":"Hackaya Development","id":16,"unread":20,"has_icon":true,"cat_id":3,"last_updated":1379894723,"order_id":0},{"feed_url":"http:\/\/m3drano.blogspot.com\/feeds\/posts\/default","title":"http:\/\/m3drano.blogspot.com\/feeds\/posts\/default","id":13,"unread":0,"has_icon":true,"cat_id":3,"last_updated":1379894708,"order_id":0},{"feed_url":"http:\/\/izqui.me\/rss","title":"Jorge Izquierdo Blog","id":11,"unread":0,"has_icon":false,"cat_id":3,"last_updated":1379894404,"order_id":0},{"feed_url":"http:\/\/josealobato.tumblr.com\/rss","title":"Jose A. Lobato Blog","id":17,"unread":20,"has_icon":true,"cat_id":3,"last_updated":1379894728,"order_id":0},{"feed_url":"http:\/\/mhall119.com\/feed\/","title":"Michael Hall","id":15,"unread":10,"has_icon":false,"cat_id":3,"last_updated":1379894720,"order_id":0},{"feed_url":"http:\/\/tirania.org\/blog\/miguel.rss2","title":"Miguel de Icaza","id":20,"unread":30,"has_icon":false,"cat_id":3,"last_updated":1379894737,"order_id":0},{"feed_url":"http:\/\/ruido-blanco.net\/blog\/feed\/","title":"Ruido blanco","id":10,"unread":10,"has_icon":true,"cat_id":3,"last_updated":1379894648,"order_id":0},{"feed_url":"http:\/\/sergioandresmeneses.wordpress.com\/feed\/","title":"Sergio's Blog","id":14,"unread":10,"has_icon":true,"cat_id":3,"last_updated":1379894719,"order_id":0},{"feed_url":"http:\/\/www.atareao.es\/feed\/","title":"atareao","id":28,"unread":22,"has_icon":true,"cat_id":4,"last_updated":1379894833,"order_id":0},{"feed_url":"http:\/\/design.canonical.com\/feed","title":"Canonical Design","id":42,"unread":10,"has_icon":true,"cat_id":4,"last_updated":1379894895,"order_id":0},{"feed_url":"http:\/\/fullcirclemagazine.org\/feed\/","title":"Full Circle Magazine","id":40,"unread":10,"has_icon":false,"cat_id":4,"last_updated":1379894894,"order_id":0},{"feed_url":"http:\/\/www.jonobacon.org\/feed\/","title":"jonobacon@home","id":30,"unread":9,"has_icon":false,"cat_id":4,"last_updated":1379894847,"order_id":0},{"feed_url":"http:\/\/elementaryos.org\/journal\/rss.xml","title":"Journal | elementary","id":44,"unread":0,"has_icon":false,"cat_id":4,"last_updated":1379894896,"order_id":0},{"feed_url":"http:\/\/libuntu.wordpress.com\/feed\/","title":"Libuntu","id":34,"unread":10,"has_icon":true,"cat_id":4,"last_updated":1379894852,"order_id":0},{"feed_url":"http:\/\/www.omgubuntu.co.uk\/feed","title":"OMG! Ubuntu! | Everything Ubuntu. Daily.","id":38,"unread":18,"has_icon":true,"cat_id":4,"last_updated":1379894893,"order_id":0},{"feed_url":"http:\/\/orvtech.com\/feed\/","title":"orvtech: Linux, Android, BASH Scripts, y Fedora","id":31,"unread":10,"has_icon":true,"cat_id":4,"last_updated":1379896205,"order_id":0},{"feed_url":"http:\/\/feeds.feedburner.com\/paraisoLinux","title":"Paraiso Linux","id":43,"unread":10,"has_icon":true,"cat_id":4,"last_updated":1379894412,"order_id":0},{"feed_url":"http:\/\/feeds.feedburner.com\/Pillateunlinux","title":"Pillateunlinux","id":39,"unread":15,"has_icon":true,"cat_id":4,"last_updated":1379894531,"order_id":0},{"feed_url":"http:\/\/planet.ubuntu.com\/rss20.xml","title":"Planet Ubuntu","id":27,"unread":40,"has_icon":true,"cat_id":4,"last_updated":1379894821,"order_id":0},{"feed_url":"http:\/\/www.raspberrypi.org\/feed","title":"Raspberry Pi","id":29,"unread":10,"has_icon":true,"cat_id":4,"last_updated":1379894846,"order_id":0},{"feed_url":"http:\/\/soloubuntu.com.ar\/feeds\/posts\/default","title":"soloUbuntu","id":35,"unread":25,"has_icon":true,"cat_id":4,"last_updated":1379894631,"order_id":0},{"feed_url":"http:\/\/developer.ubuntu.com\/2013\/02\/taking-ubuntu-touch-to-new-levels\/feed\/","title":"Taking Ubuntu Touch Developer Preview to new levels | Ubuntu ...","id":24,"unread":0,"has_icon":true,"cat_id":4,"last_updated":1379894738,"order_id":0},{"feed_url":"http:\/\/feeds.feedburner.com\/themagpi","title":"The mag Pi","id":23,"unread":10,"has_icon":true,"cat_id":4,"last_updated":1379894472,"order_id":0},{"feed_url":"http:\/\/feeds.feedburner.com\/UbuntuSoftwareLibre","title":"Ubuntu & Software libre","id":26,"unread":25,"has_icon":true,"cat_id":4,"last_updated":1379894789,"order_id":0},{"feed_url":"http:\/\/developer.ubuntu.com\/home\/feed\/","title":"Ubuntu App Developer","id":33,"unread":0,"has_icon":true,"cat_id":4,"last_updated":1379894847,"order_id":0},{"feed_url":"http:\/\/ubuntumovil.es\/?feed=rss2","title":"Ubuntu M\u00f3vil","id":22,"unread":0,"has_icon":false,"cat_id":4,"last_updated":1379894619,"order_id":0},{"feed_url":"http:\/\/podcast.ubuntu-uk.org\/feed\/","title":"Ubuntu Podcast","id":37,"unread":18,"has_icon":true,"cat_id":4,"last_updated":1379896216,"order_id":0},{"feed_url":"http:\/\/ubuntu-touch.blogspot.com\/feeds\/posts\/default","title":"Ubuntu Touch Journey","id":25,"unread":18,"has_icon":true,"cat_id":4,"last_updated":1379894759,"order_id":0},{"feed_url":"http:\/\/ubuntu-uk.org\/feed\/","title":"Ubuntu UK","id":41,"unread":0,"has_icon":false,"cat_id":4,"last_updated":1379894894,"order_id":0},{"feed_url":"http:\/\/feeds.feedburner.com\/UnBrutoConDebian?format=xml","title":"Un bruto con Debian","id":36,"unread":25,"has_icon":true,"cat_id":4,"last_updated":1379894879,"order_id":0},{"feed_url":"http:\/\/feeds.feedburner.com\/webupd8","title":"Web Upd8 - Ubuntu \/ Linux blog","id":32,"unread":15,"has_icon":true,"cat_id":4,"last_updated":1379895119,"order_id":0},{"feed_url":"http:\/\/alt1040.com\/feed","title":"ALT1040","id":47,"unread":27,"has_icon":true,"cat_id":5,"last_updated":1379894934,"order_id":0},{"feed_url":"http:\/\/blog.bricogeek.com\/noticias\/rss\/","title":"BricoGeek.com Blog","id":50,"unread":16,"has_icon":true,"cat_id":5,"last_updated":1379894630,"order_id":0},{"feed_url":"http:\/\/blog.pirate3d.com\/rss","title":"Pirate 3D - Blog","id":45,"unread":20,"has_icon":true,"cat_id":5,"last_updated":1379894906,"order_id":0},{"feed_url":"http:\/\/planetared.com\/feed\/","title":"Planeta Red - Las \u00faltimas noticias sobre tecnolog\u00eda, m\u00f3viles e Internet","id":46,"unread":20,"has_icon":true,"cat_id":5,"last_updated":1379894907,"order_id":0},{"feed_url":"http:\/\/www.xataka.com\/index.xml","title":"Xataka","id":49,"unread":30,"has_icon":true,"cat_id":5,"last_updated":1379894679,"order_id":0},{"feed_url":"http:\/\/feeds.weblogssl.com\/Xatakahome","title":"Xatakahome","id":48,"unread":25,"has_icon":true,"cat_id":5,"last_updated":1379894967,"order_id":0},{"feed_url":"http:\/\/feeds.feedburner.com\/NoPuedoCreerQueLoHayanInventado","title":"No Puedo Creer","id":51,"unread":11,"has_icon":true,"cat_id":6,"last_updated":1379894975,"order_id":0},{"feed_url":"http:\/\/ochentaycincoporcientococoa.tumblr.com\/rss","title":"85% COCOA","id":55,"unread":20,"has_icon":true,"cat_id":7,"last_updated":1379895019,"order_id":0},{"feed_url":"http:\/\/petr-mitrichev.blogspot.com\/feeds\/posts\/default","title":"Algorithm problems for dummies: Petr Mitrichev's blog","id":54,"unread":25,"has_icon":true,"cat_id":7,"last_updated":1379895013,"order_id":0},{"feed_url":"http:\/\/weblog.discapnet.es\/rssgenerator.aspx?nivel=5&id=40","title":"Blog 'Programar a ciegas' de Discapnet","id":57,"unread":10,"has_icon":false,"cat_id":7,"last_updated":1379895034,"order_id":0},{"feed_url":"http:\/\/www.cimgf.com\/feed\/","title":"Cocoa Is My Girlfriend","id":56,"unread":14,"has_icon":false,"cat_id":7,"last_updated":1379895021,"order_id":0},{"feed_url":"http:\/\/www.genbetadev.com\/index.xml","title":"Genbetadev","id":52,"unread":27,"has_icon":true,"cat_id":7,"last_updated":1379894595,"order_id":0},{"feed_url":"http:\/\/www.programaraciegas.es\/feed\/","title":"Programar a ciegas","id":58,"unread":0,"has_icon":false,"cat_id":7,"last_updated":1379895035,"order_id":0},{"feed_url":"http:\/\/wedevelopers.com\/feed\/","title":"We.Developers | El programa hecho por desarrolladores para ...","id":53,"unread":10,"has_icon":true,"cat_id":7,"last_updated":1379894979,"order_id":0}]}
+2013-09-26 05:07:43.053 JSONTest[138:303] categoy added: DOMOTICA
+2013-09-26 05:07:43.054 JSONTest[138:303] categoy added: Apple
+2013-09-26 05:07:43.054 JSONTest[138:303] categoy added: PERSONAL
+2013-09-26 05:07:43.054 JSONTest[138:303] categoy added: Linux
+2013-09-26 05:07:43.055 JSONTest[138:303] categoy added: TECHNOLOGY
+2013-09-26 05:07:43.055 JSONTest[138:303] categoy added: GeekThings
+2013-09-26 05:07:43.055 JSONTest[138:303] categoy added: DEVELOPMENT
+2013-09-26 05:07:43.055 JSONTest[138:303] categoy added: Special
+2013-09-26 05:07:43.056 JSONTest[138:303] categoy added: Uncategorized
+2013-09-26 05:07:43.056 JSONTest[138:303] number of categories in Array: 9
+2013-09-26 05:07:43.586 JSONTest[138:303] contents items: 69
+2013-09-26 05:07:43.587 JSONTest[138:303] feed added: Starred articles
+2013-09-26 05:07:43.587 JSONTest[138:303] feed added: Published articles
+2013-09-26 05:07:43.588 JSONTest[138:303] feed added: Fresh articles
+2013-09-26 05:07:43.589 JSONTest[138:303] feed added: All articles
+2013-09-26 05:07:43.589 JSONTest[138:303] feed added: Recently read
+2013-09-26 05:07:43.590 JSONTest[138:303] feed added: Archived articles
+2013-09-26 05:07:43.590 JSONTest[138:303] feed added: 0xDA_bit
+2013-09-26 05:07:43.590 JSONTest[138:303] feed added: Core dumped
+2013-09-26 05:07:43.591 JSONTest[138:303] feed added: Elblogsalmon
+2013-09-26 05:07:43.591 JSONTest[138:303] feed added: NSScreencast (free videos)
+2013-09-26 05:07:43.592 JSONTest[138:303] feed added: Tiny Tiny RSS: Forum
+2013-09-26 05:07:43.592 JSONTest[138:303] feed added: Tiny Tiny RSS: New Releases
+2013-09-26 05:07:43.593 JSONTest[138:303] feed added: Torcelly
+2013-09-26 05:07:43.594 JSONTest[138:303] feed added: Mis experiencias con la Raspberry Pi
+2013-09-26 05:07:43.594 JSONTest[138:303] feed added: 9to5Mac
+2013-09-26 05:07:43.594 JSONTest[138:303] feed added: Applesfera
+2013-09-26 05:07:43.595 JSONTest[138:303] feed added: AppleWeblog
+2013-09-26 05:07:43.595 JSONTest[138:303] feed added: iPadSfera
+2013-09-26 05:07:43.596 JSONTest[138:303] feed added: MacToday
+2013-09-26 05:07:43.596 JSONTest[138:303] feed added: Minimal Mac
+2013-09-26 05:07:43.596 JSONTest[138:303] feed added: Bilal Syed Hussain
+2013-09-26 05:07:43.597 JSONTest[138:303] feed added: Blog de Raúl Pérez
+2013-09-26 05:07:43.597 JSONTest[138:303] feed added: Fickle Bits
+2013-09-26 05:07:43.598 JSONTest[138:303] feed added: freniche.com: iPhone, Java, Macs, Linux...
+2013-09-26 05:07:43.598 JSONTest[138:303] feed added: Hackaya Development
+2013-09-26 05:07:43.599 JSONTest[138:303] feed added: http://m3drano.blogspot.com/feeds/posts/default
+2013-09-26 05:07:43.599 JSONTest[138:303] feed added: Jorge Izquierdo Blog
+2013-09-26 05:07:43.599 JSONTest[138:303] feed added: Jose A. Lobato Blog
+2013-09-26 05:07:43.600 JSONTest[138:303] feed added: Michael Hall
+2013-09-26 05:07:43.601 JSONTest[138:303] feed added: Miguel de Icaza
+2013-09-26 05:07:43.601 JSONTest[138:303] feed added: Ruido blanco
+2013-09-26 05:07:43.601 JSONTest[138:303] feed added: Sergio's Blog
+2013-09-26 05:07:43.601 JSONTest[138:303] feed added: atareao
+2013-09-26 05:07:43.601 JSONTest[138:303] feed added: Canonical Design
+2013-09-26 05:07:43.602 JSONTest[138:303] feed added: Full Circle Magazine
+2013-09-26 05:07:43.602 JSONTest[138:303] feed added: jonobacon@home
+2013-09-26 05:07:43.602 JSONTest[138:303] feed added: Journal | elementary
+2013-09-26 05:07:43.603 JSONTest[138:303] feed added: Libuntu
+2013-09-26 05:07:43.603 JSONTest[138:303] feed added: OMG! Ubuntu! | Everything Ubuntu. Daily.
+2013-09-26 05:07:43.603 JSONTest[138:303] feed added: orvtech: Linux, Android, BASH Scripts, y Fedora
+2013-09-26 05:07:43.604 JSONTest[138:303] feed added: Paraiso Linux
+2013-09-26 05:07:43.604 JSONTest[138:303] feed added: Pillateunlinux
+2013-09-26 05:07:43.604 JSONTest[138:303] feed added: Planet Ubuntu
+2013-09-26 05:07:43.604 JSONTest[138:303] feed added: Raspberry Pi
+2013-09-26 05:07:43.605 JSONTest[138:303] feed added: soloUbuntu
+2013-09-26 05:07:43.605 JSONTest[138:303] feed added: Taking Ubuntu Touch Developer Preview to new levels | Ubuntu ...
+2013-09-26 05:07:43.605 JSONTest[138:303] feed added: The mag Pi
+2013-09-26 05:07:43.605 JSONTest[138:303] feed added: Ubuntu & Software libre
+2013-09-26 05:07:43.605 JSONTest[138:303] feed added: Ubuntu App Developer
+2013-09-26 05:07:43.606 JSONTest[138:303] feed added: Ubuntu Móvil
+2013-09-26 05:07:43.606 JSONTest[138:303] feed added: Ubuntu Podcast
+2013-09-26 05:07:43.607 JSONTest[138:303] feed added: Ubuntu Touch Journey
+2013-09-26 05:07:43.607 JSONTest[138:303] feed added: Ubuntu UK
+2013-09-26 05:07:43.608 JSONTest[138:303] feed added: Un bruto con Debian
+2013-09-26 05:07:43.608 JSONTest[138:303] feed added: Web Upd8 - Ubuntu / Linux blog
+2013-09-26 05:07:43.609 JSONTest[138:303] feed added: ALT1040
+2013-09-26 05:07:43.609 JSONTest[138:303] feed added: BricoGeek.com Blog
+2013-09-26 05:07:43.610 JSONTest[138:303] feed added: Pirate 3D - Blog
+2013-09-26 05:07:43.610 JSONTest[138:303] feed added: Planeta Red - Las últimas noticias sobre tecnología, móviles e Internet
+2013-09-26 05:07:43.610 JSONTest[138:303] feed added: Xataka
+2013-09-26 05:07:43.610 JSONTest[138:303] feed added: Xatakahome
+2013-09-26 05:07:43.611 JSONTest[138:303] feed added: No Puedo Creer
+2013-09-26 05:07:43.612 JSONTest[138:303] feed added: 85% COCOA
+2013-09-26 05:07:43.612 JSONTest[138:303] feed added: Algorithm problems for dummies: Petr Mitrichev's blog
+2013-09-26 05:07:43.612 JSONTest[138:303] feed added: Blog 'Programar a ciegas' de Discapnet
+2013-09-26 05:07:43.612 JSONTest[138:303] feed added: Cocoa Is My Girlfriend
+2013-09-26 05:07:43.613 JSONTest[138:303] feed added: Genbetadev
+2013-09-26 05:07:43.613 JSONTest[138:303] feed added: Programar a ciegas
+2013-09-26 05:07:43.613 JSONTest[138:303] feed added: We.Developers | El programa hecho por desarrolladores para ...
+2013-09-26 05:07:43.614 JSONTest[138:303] 
 
 
 
-2013-09-23 02:48:49.813 JSONTest[14544:303] getFeeds Dict = {
-    content =     (
-                {
-            "cat_id" = "-1";
-            id = "-1";
-            title = "Starred articles";
-            unread = 0;
-        },
-                {
-            "cat_id" = "-1";
-            id = "-2";
-            title = "Published articles";
-            unread = 0;
-        },
-                {
-            "cat_id" = "-1";
-            id = "-3";
-            title = "Fresh articles";
-            unread = 56;
-        },
-                {
-            "cat_id" = "-1";
-            id = "-4";
-            title = "All articles";
-            unread = 968;
-        },
-                {
-            "cat_id" = "-1";
-            id = "-6";
-            title = "Recently read";
-            unread = 0;
-        },
-                {
-            "cat_id" = "-1";
-            id = 0;
-            title = "Archived articles";
-            unread = 0;
-        },
-                {
-            "cat_id" = 0;
-            "feed_url" = "http://damedinalvarez.wordpress.com/feed/";
-            "has_icon" = 1;
-            id = 59;
-            "last_updated" = 1379895045;
-            "order_id" = 0;
-            title = "0xDA_bit";
-            unread = 10;
-        },
-                {
-            "cat_id" = 0;
-            "feed_url" = "http://feeds.feedburner.com/m3drano";
-            "has_icon" = 1;
-            id = 60;
-            "last_updated" = 1379895099;
-            "order_id" = 0;
-            title = "Core dumped";
-            unread = 7;
-        },
-                {
-            "cat_id" = 0;
-            "feed_url" = "http://www.elblogsalmon.com/index.xml";
-            "has_icon" = 1;
-            id = 61;
-            "last_updated" = 1379895082;
-            "order_id" = 0;
-            title = Elblogsalmon;
-            unread = 27;
-        },
-                {
-            "cat_id" = 0;
-            "feed_url" = "http://nsscreencast.com/feed";
-            "has_icon" = 1;
-            id = 63;
-            "last_updated" = 1379895095;
-            "order_id" = 0;
-            title = "NSScreencast (free videos)";
-            unread = 18;
-        },
-                {
-            "cat_id" = 0;
-            "feed_url" = "http://tt-rss.org/forum/rss.php";
-            "has_icon" = 1;
-            id = 2;
-            "last_updated" = 1379894436;
-            "order_id" = 0;
-            title = "Tiny Tiny RSS: Forum";
-            unread = 42;
-        },
-                {
-            "cat_id" = 0;
-            "feed_url" = "http://tt-rss.org/releases.rss";
-            "has_icon" = 1;
-            id = 1;
-            "last_updated" = 1379894413;
-            "order_id" = 0;
-            title = "Tiny Tiny RSS: New Releases";
-            unread = 5;
-        },
-                {
-            "cat_id" = 0;
-            "feed_url" = "http://torcelly.com/?feed=rss";
-            "has_icon" = 0;
-            id = 62;
-            "last_updated" = 1379895083;
-            "order_id" = 0;
-            title = Torcelly;
-            unread = 5;
-        },
-                {
-            "cat_id" = 1;
-            "feed_url" = "http://muyraspi.blogspot.com/feeds/posts/default";
-            "has_icon" = 1;
-            id = 3;
-            "last_updated" = 1379894436;
-            "order_id" = 0;
-            title = "Mis experiencias con la Raspberry Pi";
-            unread = 25;
-        },
-                {
-            "cat_id" = 2;
-            "feed_url" = "http://9to5mac.com/feed/";
-            "has_icon" = 1;
-            id = 6;
-            "last_updated" = 1379894610;
-            "order_id" = 0;
-            title = 9to5Mac;
-            unread = 16;
-        },
-                {
-            "cat_id" = 2;
-            "feed_url" = "http://feeds.weblogssl.com/applesfera";
-            "has_icon" = 1;
-            id = 5;
-            "last_updated" = 1379894561;
-            "order_id" = 0;
-            title = Applesfera;
-            unread = 25;
-        },
-                {
-            "cat_id" = 2;
-            "feed_url" = "http://es.appleweblog.com/feed/";
-            "has_icon" = 1;
-            id = 8;
-            "last_updated" = 1379894631;
-            "order_id" = 0;
-            title = AppleWeblog;
-            unread = 28;
-        },
-                {
-            "cat_id" = 2;
-            "feed_url" = "http://feeds.feedburner.com/ipadsfera";
-            "has_icon" = 1;
-            id = 4;
-            "last_updated" = 1379896215;
-            "order_id" = 0;
-            title = iPadSfera;
-            unread = 13;
-        },
-                {
-            "cat_id" = 2;
-            "feed_url" = "http://www.revistamactoday.com/feed";
-            "has_icon" = 1;
-            id = 7;
-            "last_updated" = 1379894620;
-            "order_id" = 0;
-            title = MacToday;
-            unread = 10;
-        },
-                {
-            "cat_id" = 2;
-            "feed_url" = "http://minimalmac.com/rss";
-            "has_icon" = 1;
-            id = 9;
-            "last_updated" = 1379894646;
-            "order_id" = 0;
-            title = "Minimal Mac";
-            unread = 20;
-        },
-                {
-            "cat_id" = 3;
-            "feed_url" = "http://bilalh.github.com/feed/";
-            "has_icon" = 0;
-            id = 19;
-            "last_updated" = 1379894736;
-            "order_id" = 0;
-            title = "Bilal Syed Hussain";
-            unread = 16;
-        },
-                {
-            "cat_id" = 3;
-            "feed_url" = "http://blog.raulperezanton.com/feed/";
-            "has_icon" = 0;
-            id = 21;
-            "last_updated" = 1379894738;
-            "order_id" = 0;
-            title = "Blog de Ra\U00fal P\U00e9rez";
-            unread = 11;
-        },
-                {
-            "cat_id" = 3;
-            "feed_url" = "http://feeds.feedburner.com/ficklebits?format=xml";
-            "has_icon" = 1;
-            id = 18;
-            "last_updated" = 1379894464;
-            "order_id" = 0;
-            title = "Fickle Bits";
-            unread = 20;
-        },
-                {
-            "cat_id" = 3;
-            "feed_url" = "http://feeds.feedburner.com/dfreniche";
-            "has_icon" = 0;
-            id = 12;
-            "last_updated" = 1379894697;
-            "order_id" = 0;
-            title = "freniche.com: iPhone, Java, Macs, Linux...";
-            unread = 15;
-        },
-                {
-            "cat_id" = 3;
-            "feed_url" = "http://hackaya.tumblr.com/rss";
-            "has_icon" = 1;
-            id = 16;
-            "last_updated" = 1379894723;
-            "order_id" = 0;
-            title = "Hackaya Development";
-            unread = 20;
-        },
-                {
-            "cat_id" = 3;
-            "feed_url" = "http://m3drano.blogspot.com/feeds/posts/default";
-            "has_icon" = 1;
-            id = 13;
-            "last_updated" = 1379894708;
-            "order_id" = 0;
-            title = "http://m3drano.blogspot.com/feeds/posts/default";
-            unread = 0;
-        },
-                {
-            "cat_id" = 3;
-            "feed_url" = "http://izqui.me/rss";
-            "has_icon" = 0;
-            id = 11;
-            "last_updated" = 1379894404;
-            "order_id" = 0;
-            title = "Jorge Izquierdo Blog";
-            unread = 0;
-        },
-                {
-            "cat_id" = 3;
-            "feed_url" = "http://josealobato.tumblr.com/rss";
-            "has_icon" = 1;
-            id = 17;
-            "last_updated" = 1379894728;
-            "order_id" = 0;
-            title = "Jose A. Lobato Blog";
-            unread = 20;
-        },
-                {
-            "cat_id" = 3;
-            "feed_url" = "http://mhall119.com/feed/";
-            "has_icon" = 0;
-            id = 15;
-            "last_updated" = 1379894720;
-            "order_id" = 0;
-            title = "Michael Hall";
-            unread = 10;
-        },
-                {
-            "cat_id" = 3;
-            "feed_url" = "http://tirania.org/blog/miguel.rss2";
-            "has_icon" = 0;
-            id = 20;
-            "last_updated" = 1379894737;
-            "order_id" = 0;
-            title = "Miguel de Icaza";
-            unread = 30;
-        },
-                {
-            "cat_id" = 3;
-            "feed_url" = "http://ruido-blanco.net/blog/feed/";
-            "has_icon" = 1;
-            id = 10;
-            "last_updated" = 1379894648;
-            "order_id" = 0;
-            title = "Ruido blanco";
-            unread = 10;
-        },
-                {
-            "cat_id" = 3;
-            "feed_url" = "http://sergioandresmeneses.wordpress.com/feed/";
-            "has_icon" = 1;
-            id = 14;
-            "last_updated" = 1379894719;
-            "order_id" = 0;
-            title = "Sergio's Blog";
-            unread = 10;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://www.atareao.es/feed/";
-            "has_icon" = 1;
-            id = 28;
-            "last_updated" = 1379894833;
-            "order_id" = 0;
-            title = atareao;
-            unread = 22;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://design.canonical.com/feed";
-            "has_icon" = 1;
-            id = 42;
-            "last_updated" = 1379894895;
-            "order_id" = 0;
-            title = "Canonical Design";
-            unread = 10;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://fullcirclemagazine.org/feed/";
-            "has_icon" = 0;
-            id = 40;
-            "last_updated" = 1379894894;
-            "order_id" = 0;
-            title = "Full Circle Magazine";
-            unread = 10;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://www.jonobacon.org/feed/";
-            "has_icon" = 0;
-            id = 30;
-            "last_updated" = 1379894847;
-            "order_id" = 0;
-            title = "jonobacon@home";
-            unread = 9;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://elementaryos.org/journal/rss.xml";
-            "has_icon" = 0;
-            id = 44;
-            "last_updated" = 1379894896;
-            "order_id" = 0;
-            title = "Journal | elementary";
-            unread = 0;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://libuntu.wordpress.com/feed/";
-            "has_icon" = 1;
-            id = 34;
-            "last_updated" = 1379894852;
-            "order_id" = 0;
-            title = Libuntu;
-            unread = 10;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://www.omgubuntu.co.uk/feed";
-            "has_icon" = 1;
-            id = 38;
-            "last_updated" = 1379894893;
-            "order_id" = 0;
-            title = "OMG! Ubuntu! | Everything Ubuntu. Daily.";
-            unread = 18;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://orvtech.com/feed/";
-            "has_icon" = 1;
-            id = 31;
-            "last_updated" = 1379896205;
-            "order_id" = 0;
-            title = "orvtech: Linux, Android, BASH Scripts, y Fedora";
-            unread = 10;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://feeds.feedburner.com/paraisoLinux";
-            "has_icon" = 1;
-            id = 43;
-            "last_updated" = 1379894412;
-            "order_id" = 0;
-            title = "Paraiso Linux";
-            unread = 10;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://feeds.feedburner.com/Pillateunlinux";
-            "has_icon" = 1;
-            id = 39;
-            "last_updated" = 1379894531;
-            "order_id" = 0;
-            title = Pillateunlinux;
-            unread = 15;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://planet.ubuntu.com/rss20.xml";
-            "has_icon" = 1;
-            id = 27;
-            "last_updated" = 1379894821;
-            "order_id" = 0;
-            title = "Planet Ubuntu";
-            unread = 40;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://www.raspberrypi.org/feed";
-            "has_icon" = 1;
-            id = 29;
-            "last_updated" = 1379894846;
-            "order_id" = 0;
-            title = "Raspberry Pi";
-            unread = 10;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://soloubuntu.com.ar/feeds/posts/default";
-            "has_icon" = 1;
-            id = 35;
-            "last_updated" = 1379894631;
-            "order_id" = 0;
-            title = soloUbuntu;
-            unread = 25;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://developer.ubuntu.com/2013/02/taking-ubuntu-touch-to-new-levels/feed/";
-            "has_icon" = 1;
-            id = 24;
-            "last_updated" = 1379894738;
-            "order_id" = 0;
-            title = "Taking Ubuntu Touch Developer Preview to new levels | Ubuntu ...";
-            unread = 0;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://feeds.feedburner.com/themagpi";
-            "has_icon" = 1;
-            id = 23;
-            "last_updated" = 1379894472;
-            "order_id" = 0;
-            title = "The mag Pi";
-            unread = 10;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://feeds.feedburner.com/UbuntuSoftwareLibre";
-            "has_icon" = 1;
-            id = 26;
-            "last_updated" = 1379894789;
-            "order_id" = 0;
-            title = "Ubuntu & Software libre";
-            unread = 25;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://developer.ubuntu.com/home/feed/";
-            "has_icon" = 1;
-            id = 33;
-            "last_updated" = 1379894847;
-            "order_id" = 0;
-            title = "Ubuntu App Developer";
-            unread = 0;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://ubuntumovil.es/?feed=rss2";
-            "has_icon" = 0;
-            id = 22;
-            "last_updated" = 1379894619;
-            "order_id" = 0;
-            title = "Ubuntu M\U00f3vil";
-            unread = 0;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://podcast.ubuntu-uk.org/feed/";
-            "has_icon" = 1;
-            id = 37;
-            "last_updated" = 1379896216;
-            "order_id" = 0;
-            title = "Ubuntu Podcast";
-            unread = 18;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://ubuntu-touch.blogspot.com/feeds/posts/default";
-            "has_icon" = 1;
-            id = 25;
-            "last_updated" = 1379894759;
-            "order_id" = 0;
-            title = "Ubuntu Touch Journey";
-            unread = 18;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://ubuntu-uk.org/feed/";
-            "has_icon" = 0;
-            id = 41;
-            "last_updated" = 1379894894;
-            "order_id" = 0;
-            title = "Ubuntu UK";
-            unread = 0;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://feeds.feedburner.com/UnBrutoConDebian?format=xml";
-            "has_icon" = 1;
-            id = 36;
-            "last_updated" = 1379894879;
-            "order_id" = 0;
-            title = "Un bruto con Debian";
-            unread = 25;
-        },
-                {
-            "cat_id" = 4;
-            "feed_url" = "http://feeds.feedburner.com/webupd8";
-            "has_icon" = 1;
-            id = 32;
-            "last_updated" = 1379895119;
-            "order_id" = 0;
-            title = "Web Upd8 - Ubuntu / Linux blog";
-            unread = 15;
-        },
-                {
-            "cat_id" = 5;
-            "feed_url" = "http://alt1040.com/feed";
-            "has_icon" = 1;
-            id = 47;
-            "last_updated" = 1379894934;
-            "order_id" = 0;
-            title = ALT1040;
-            unread = 27;
-        },
-                {
-            "cat_id" = 5;
-            "feed_url" = "http://blog.bricogeek.com/noticias/rss/";
-            "has_icon" = 1;
-            id = 50;
-            "last_updated" = 1379894630;
-            "order_id" = 0;
-            title = "BricoGeek.com Blog";
-            unread = 16;
-        },
-                {
-            "cat_id" = 5;
-            "feed_url" = "http://blog.pirate3d.com/rss";
-            "has_icon" = 1;
-            id = 45;
-            "last_updated" = 1379894906;
-            "order_id" = 0;
-            title = "Pirate 3D - Blog";
-            unread = 20;
-        },
-                {
-            "cat_id" = 5;
-            "feed_url" = "http://planetared.com/feed/";
-            "has_icon" = 1;
-            id = 46;
-            "last_updated" = 1379894907;
-            "order_id" = 0;
-            title = "Planeta Red - Las \U00faltimas noticias sobre tecnolog\U00eda, m\U00f3viles e Internet";
-            unread = 20;
-        },
-                {
-            "cat_id" = 5;
-            "feed_url" = "http://www.xataka.com/index.xml";
-            "has_icon" = 1;
-            id = 49;
-            "last_updated" = 1379894679;
-            "order_id" = 0;
-            title = Xataka;
-            unread = 30;
-        },
-                {
-            "cat_id" = 5;
-            "feed_url" = "http://feeds.weblogssl.com/Xatakahome";
-            "has_icon" = 1;
-            id = 48;
-            "last_updated" = 1379894967;
-            "order_id" = 0;
-            title = Xatakahome;
-            unread = 25;
-        },
-                {
-            "cat_id" = 6;
-            "feed_url" = "http://feeds.feedburner.com/NoPuedoCreerQueLoHayanInventado";
-            "has_icon" = 1;
-            id = 51;
-            "last_updated" = 1379894975;
-            "order_id" = 0;
-            title = "No Puedo Creer";
-            unread = 11;
-        },
-                {
-            "cat_id" = 7;
-            "feed_url" = "http://ochentaycincoporcientococoa.tumblr.com/rss";
-            "has_icon" = 1;
-            id = 55;
-            "last_updated" = 1379895019;
-            "order_id" = 0;
-            title = "85% COCOA";
-            unread = 20;
-        },
-                {
-            "cat_id" = 7;
-            "feed_url" = "http://petr-mitrichev.blogspot.com/feeds/posts/default";
-            "has_icon" = 1;
-            id = 54;
-            "last_updated" = 1379895013;
-            "order_id" = 0;
-            title = "Algorithm problems for dummies: Petr Mitrichev's blog";
-            unread = 25;
-        },
-                {
-            "cat_id" = 7;
-            "feed_url" = "http://weblog.discapnet.es/rssgenerator.aspx?nivel=5&id=40";
-            "has_icon" = 0;
-            id = 57;
-            "last_updated" = 1379895034;
-            "order_id" = 0;
-            title = "Blog 'Programar a ciegas' de Discapnet";
-            unread = 10;
-        },
-                {
-            "cat_id" = 7;
-            "feed_url" = "http://www.cimgf.com/feed/";
-            "has_icon" = 0;
-            id = 56;
-            "last_updated" = 1379895021;
-            "order_id" = 0;
-            title = "Cocoa Is My Girlfriend";
-            unread = 14;
-        },
-                {
-            "cat_id" = 7;
-            "feed_url" = "http://www.genbetadev.com/index.xml";
-            "has_icon" = 1;
-            id = 52;
-            "last_updated" = 1379894595;
-            "order_id" = 0;
-            title = Genbetadev;
-            unread = 27;
-        },
-                {
-            "cat_id" = 7;
-            "feed_url" = "http://www.programaraciegas.es/feed/";
-            "has_icon" = 0;
-            id = 58;
-            "last_updated" = 1379895035;
-            "order_id" = 0;
-            title = "Programar a ciegas";
-            unread = 0;
-        },
-                {
-            "cat_id" = 7;
-            "feed_url" = "http://wedevelopers.com/feed/";
-            "has_icon" = 1;
-            id = 53;
-            "last_updated" = 1379894979;
-            "order_id" = 0;
-            title = "We.Developers | El programa hecho por desarrolladores para ...";
-            unread = 10;
-        }
-    );
-    seq = 0;
-    status = 0;
-}
-2013-09-23 02:48:50.277 JSONTest[14544:303] getHeadlines RESPONSE: {"seq":0,"status":0,"content":[{"id":296,"unread":true,"marked":false,"published":false,"updated":1379082026,"is_updated":false,"title":"WordPress, \u201csimply the best\u201d","link":"http:\/\/www.revistamactoday.com\/2013\/09\/13\/wordpress-simply-the-best\/","feed_id":"7","tags":["a fondo","blog","wordpress"],"labels":null,"feed_title":"MacToday","comments_count":0,"comments_link":"","always_display_attachments":false,"author":"admin","score":0},{"id":297,"unread":true,"marked":false,"published":false,"updated":1378554471,"is_updated":false,"title":"N\u00famero de septiembre 2013, disponible","link":"http:\/\/www.revistamactoday.com\/2013\/09\/07\/numero-de-septiembre-2013-disponible\/","feed_id":"7","tags":["blog","noticias"],"labels":null,"feed_title":"MacToday","comments_count":0,"comments_link":"","always_display_attachments":false,"author":"admin","score":0},{"id":298,"unread":true,"marked":false,"published":false,"updated":1378225954,"is_updated":false,"title":"Avance #mactodayseptiembre: Entrevista a Manuel Curdi, de Nintendo","link":"http:\/\/www.revistamactoday.com\/2013\/09\/03\/avance-mactodayseptiembre-entrevista-a-manuel-curdi-de-nintendo\/","feed_id":"7","tags":["blog","entrevistas","nintendo"],"labels":null,"feed_title":"MacToday","comments_count":1,"comments_link":"","always_display_attachments":false,"author":"admin","score":0},{"id":299,"unread":true,"marked":false,"published":false,"updated":1378142630,"is_updated":false,"title":"Avance #mactodayseptiembre: Especial iOS Play","link":"http:\/\/www.revistamactoday.com\/2013\/09\/02\/avance-mactodayseptiembre-especial-ios-play\/","feed_id":"7","tags":["blog","especiales","juegos"],"labels":null,"feed_title":"MacToday","comments_count":0,"comments_link":"","always_display_attachments":false,"author":"admin","score":0},{"id":300,"unread":true,"marked":false,"published":false,"updated":1378114573,"is_updated":false,"title":"Participa en #UsoEliPadPara","link":"http:\/\/www.revistamactoday.com\/2013\/09\/02\/participa-en-usoelipadpara\/","feed_id":"7","tags":["blog","twitter","ipad"],"labels":null,"feed_title":"MacToday","comments_count":1,"comments_link":"","always_display_attachments":false,"author":"admin","score":0},{"id":301,"unread":true,"marked":false,"published":false,"updated":1377864622,"is_updated":false,"title":"Avance #mactodayseptiembre: A fondo \u201cCrea tu web en pocos pasos\u201d","link":"http:\/\/www.revistamactoday.com\/2013\/08\/30\/avance-mactodayseptiembre-a-fondo-crea-tu-web-en-pocos-pasos\/","feed_id":"7","tags":["a fondo","blog"],"labels":null,"feed_title":"MacToday","comments_count":0,"comments_link":"","always_display_attachments":false,"author":"admin","score":0},{"id":302,"unread":true,"marked":false,"published":false,"updated":1377790392,"is_updated":false,"title":"Avance #mactodayseptiembre: ADN","link":"http:\/\/www.revistamactoday.com\/2013\/08\/29\/avance-mactodayseptiembre-adn\/","feed_id":"7","tags":["blog","reportajes","adn"],"labels":null,"feed_title":"MacToday","comments_count":0,"comments_link":"","always_display_attachments":false,"author":"admin","score":0},{"id":303,"unread":true,"marked":false,"published":false,"updated":1376916364,"is_updated":false,"title":"El podcast de MacToday, ya disponible en iTunes","link":"http:\/\/www.revistamactoday.com\/2013\/08\/19\/el-podcast-de-mactoday-ya-disponible-en-itunes\/","feed_id":"7","tags":["blog","noticias","podcast"],"labels":null,"feed_title":"MacToday","comments_count":0,"comments_link":"","always_display_attachments":false,"author":"admin","score":0},{"id":304,"unread":true,"marked":false,"published":false,"updated":1376298023,"is_updated":false,"title":"C\u00f3mo gestionar tus contrase\u00f1as en iOS 7 con iCloud Keychain","link":"http:\/\/www.revistamactoday.com\/2013\/08\/12\/como-gestionar-tus-contrasenas-en-ios-7-con-icloud-keychain\/","feed_id":"7","tags":["blog","tutoriales","icloud"],"labels":null,"feed_title":"MacToday","comments_count":0,"comments_link":"","always_display_attachments":false,"author":"admin","score":0},{"id":305,"unread":true,"marked":false,"published":false,"updated":1375960070,"is_updated":false,"title":"Reportaje: Craig Federighi","link":"http:\/\/www.revistamactoday.com\/2013\/08\/08\/reportaje-craig-federighi\/","feed_id":"7","tags":["blog","reportajes"],"labels":null,"feed_title":"MacToday","comments_count":0,"comments_link":"","always_display_attachments":false,"author":"admin","score":0}]}
+ number of feeds: 69 
 
 
 
-2013-09-23 02:48:50.283 JSONTest[14544:303] getHeadlines Dict = {
+2013-09-26 05:07:44.040 JSONTest[138:303] getHeadlines Dict = {
     content =     (
                 {
             "always_display_attachments" = 0;
-            author = admin;
-            "comments_count" = 0;
+            author = "Manuel Ajamil";
+            "comments_count" = 2;
             "comments_link" = "";
-            "feed_id" = 7;
-            "feed_title" = MacToday;
-            id = 296;
+            "feed_id" = 4;
+            "feed_title" = iPadSfera;
+            id = 1224;
             "is_updated" = 0;
-            labels = "<null>";
-            link = "http://www.revistamactoday.com/2013/09/13/wordpress-simply-the-best/";
+            labels =             (
+            );
+            link = "http://feedproxy.google.com/~r/ipadsfera/~3/v_VbzZXTxdE/";
             marked = 0;
             published = 0;
             score = 0;
             tags =             (
-                "a fondo",
-                blog,
-                wordpress
+                "aplicaciones iphone",
+                "aplicaciones iphone social media",
+                "ios 7",
+                rumores,
+                whatsapp
             );
-            title = "WordPress, \U201csimply the best\U201d";
+            title = "WhatsApp para iOS 7 posiblemente filtrado";
             unread = 1;
-            updated = 1379082026;
+            updated = 1380090957;
         },
                 {
             "always_display_attachments" = 0;
-            author = admin;
-            "comments_count" = 0;
-            "comments_link" = "";
-            "feed_id" = 7;
-            "feed_title" = MacToday;
-            id = 297;
-            "is_updated" = 0;
-            labels = "<null>";
-            link = "http://www.revistamactoday.com/2013/09/07/numero-de-septiembre-2013-disponible/";
-            marked = 0;
-            published = 0;
-            score = 0;
-            tags =             (
-                blog,
-                noticias
-            );
-            title = "N\U00famero de septiembre 2013, disponible";
-            unread = 1;
-            updated = 1378554471;
-        },
-                {
-            "always_display_attachments" = 0;
-            author = admin;
+            author = "Manuel Ajamil";
             "comments_count" = 1;
             "comments_link" = "";
-            "feed_id" = 7;
-            "feed_title" = MacToday;
-            id = 298;
+            "feed_id" = 4;
+            "feed_title" = iPadSfera;
+            id = 1160;
             "is_updated" = 0;
-            labels = "<null>";
-            link = "http://www.revistamactoday.com/2013/09/03/avance-mactodayseptiembre-entrevista-a-manuel-curdi-de-nintendo/";
+            labels =             (
+            );
+            link = "http://feedproxy.google.com/~r/ipadsfera/~3/i44I4QRanUg/";
             marked = 0;
             published = 0;
             score = 0;
             tags =             (
-                blog,
-                entrevistas,
-                nintendo
+                apple,
+                noticias,
+                curiosidades,
+                imessage
             );
-            title = "Avance #mactodayseptiembre: Entrevista a Manuel Curdi, de Nintendo";
+            title = "iMessage para Android, un peligro en toda regla";
             unread = 1;
-            updated = 1378225954;
+            updated = 1380032083;
         },
                 {
             "always_display_attachments" = 0;
-            author = admin;
-            "comments_count" = 0;
+            author = "Sergio Olivares";
+            "comments_count" = 1;
             "comments_link" = "";
-            "feed_id" = 7;
-            "feed_title" = MacToday;
-            id = 299;
+            "feed_id" = 4;
+            "feed_title" = iPadSfera;
+            id = 1117;
             "is_updated" = 0;
-            labels = "<null>";
-            link = "http://www.revistamactoday.com/2013/09/02/avance-mactodayseptiembre-especial-ios-play/";
+            labels =             (
+            );
+            link = "http://feedproxy.google.com/~r/ipadsfera/~3/4m1qvZOIyus/";
             marked = 0;
             published = 0;
             score = 0;
             tags =             (
-                blog,
-                especiales,
+                apple,
+                "curiosidades iphone",
+                noticias,
+                curiosidades,
+                "touch id"
+            );
+            title = "El Touch ID del iPhone 5s es hackeado";
+            unread = 1;
+            updated = 1380007719;
+        },
+                {
+            "always_display_attachments" = 0;
+            author = "Manuel Ajamil";
+            "comments_count" = 0;
+            "comments_link" = "";
+            "feed_id" = 4;
+            "feed_title" = iPadSfera;
+            id = 993;
+            "is_updated" = 0;
+            labels =             (
+            );
+            link = "http://feedproxy.google.com/~r/ipadsfera/~3/eLk7kBucZf8/";
+            marked = 0;
+            published = 0;
+            score = 0;
+            tags =             (
+                apple,
+                eventos,
+                noticias,
+                curiosidades,
+                "the app date"
+            );
+            title = "22 millones de espa\U00f1oles usan apps a diario y se descargan 4 millones al d\U00eda";
+            unread = 1;
+            updated = 1379929952;
+        },
+                {
+            "always_display_attachments" = 0;
+            author = "Manuel Ajamil";
+            "comments_count" = 0;
+            "comments_link" = "";
+            "feed_id" = 4;
+            "feed_title" = iPadSfera;
+            id = 982;
+            "is_updated" = 0;
+            labels =             (
+            );
+            link = "http://feedproxy.google.com/~r/ipadsfera/~3/ScmsvFmddUU/";
+            marked = 0;
+            published = 0;
+            score = 0;
+            tags =             (
+                apple,
+                noticias,
+                "app store",
+                curiosidades
+            );
+            title = "Apple incrementa de 50MB a 100MB la descarga de aplicaciones mediante datos m\U00f3viles";
+            unread = 1;
+            updated = 1379925705;
+        },
+                {
+            "always_display_attachments" = 0;
+            author = "Sergio Olivares";
+            "comments_count" = 1;
+            "comments_link" = "";
+            "feed_id" = 4;
+            "feed_title" = iPadSfera;
+            id = 942;
+            "is_updated" = 0;
+            labels =             (
+            );
+            link = "http://feedproxy.google.com/~r/ipadsfera/~3/BazkSwBC3p8/";
+            marked = 0;
+            published = 0;
+            score = 0;
+            tags =             (
+                apple,
+                "curiosidades iphone",
+                ios,
+                noticias,
+                "ios 7",
+                "iphone 5s"
+            );
+            title = "La demanda del iPhone 5S y la acogida de iOS 7 rompen todas las expectativas";
+            unread = 1;
+            updated = 1379851237;
+        },
+                {
+            "always_display_attachments" = 0;
+            author = "Sergio Olivares";
+            "comments_count" = 4;
+            "comments_link" = "";
+            "feed_id" = 4;
+            "feed_title" = iPadSfera;
+            id = 931;
+            "is_updated" = 0;
+            labels =             (
+            );
+            link = "http://feedproxy.google.com/~r/ipadsfera/~3/l5ji8-Xi7SM/";
+            marked = 0;
+            published = 0;
+            score = 0;
+            tags =             (
+                "aplicaciones iphone",
+                "aplicaciones iphone social media",
+                noticias,
+                aplicaciones,
+                curiosidades
+            );
+            title = "BBM pausa su lanzamiento en iPhone y Android";
+            unread = 1;
+            updated = 1379848640;
+        },
+                {
+            "always_display_attachments" = 0;
+            author = "Manuel Ajamil";
+            "comments_count" = 0;
+            "comments_link" = "";
+            "feed_id" = 4;
+            "feed_title" = iPadSfera;
+            id = 932;
+            "is_updated" = 0;
+            labels =             (
+            );
+            link = "http://feedproxy.google.com/~r/ipadsfera/~3/VvlEjLxsoU4/";
+            marked = 0;
+            published = 0;
+            score = 0;
+            tags =             (
+                "juegos ipad",
+                "juegos ipad deportes",
+                "juegos iphone",
+                "juegos iphone deportes",
                 juegos
             );
-            title = "Avance #mactodayseptiembre: Especial iOS Play";
+            title = "Sidekick Cycle, un juego solidario que regala bicicletas reales en \U00c1frica";
             unread = 1;
-            updated = 1378142630;
+            updated = 1379847661;
         },
                 {
             "always_display_attachments" = 0;
-            author = admin;
+            author = "Javier Mart\U00edn";
+            "comments_count" = 2;
+            "comments_link" = "";
+            "feed_id" = 4;
+            "feed_title" = iPadSfera;
+            id = 103;
+            "is_updated" = 0;
+            labels =             (
+            );
+            link = "http://feedproxy.google.com/~r/ipadsfera/~3/9xPgNrkqMjE/";
+            marked = 0;
+            published = 0;
+            score = 0;
+            tags =             (
+                "accesorios ipad",
+                "accesorios iphone",
+                apple,
+                "cables y adaptadores ipad",
+                "cables y adaptadores iphone",
+                ios,
+                accesorios,
+                curiosidades,
+                "ios 7"
+            );
+            title = "iOS 7 bloquea los cables Lightning no oficiales";
+            unread = 1;
+            updated = 1379767637;
+        },
+                {
+            "always_display_attachments" = 0;
+            author = "Manuel Ajamil";
+            "comments_count" = 5;
+            "comments_link" = "";
+            "feed_id" = 4;
+            "feed_title" = iPadSfera;
+            id = 104;
+            "is_updated" = 0;
+            labels =             (
+            );
+            link = "http://feedproxy.google.com/~r/ipadsfera/~3/wdUEOSBqMjM/";
+            marked = 0;
+            published = 0;
+            score = 0;
+            tags =             (
+                "aplicaciones iphone",
+                "aplicaciones iphone social media",
+                aplicaciones,
+                "app store",
+                "ios 7",
+                whatsapp
+            );
+            title = "WhatsApp para iOS 7 podr\U00eda ser as\U00ed";
+            unread = 1;
+            updated = 1379743393;
+        },
+                {
+            "always_display_attachments" = 0;
+            author = "Manuel Ajamil";
             "comments_count" = 1;
             "comments_link" = "";
-            "feed_id" = 7;
-            "feed_title" = MacToday;
-            id = 300;
+            "feed_id" = 4;
+            "feed_title" = iPadSfera;
+            id = 105;
             "is_updated" = 0;
-            labels = "<null>";
-            link = "http://www.revistamactoday.com/2013/09/02/participa-en-usoelipadpara/";
+            labels =             (
+            );
+            link = "http://feedproxy.google.com/~r/ipadsfera/~3/Zo_3hwnQOZc/";
             marked = 0;
             published = 0;
             score = 0;
             tags =             (
-                blog,
-                twitter,
-                ipad
+                apple,
+                ios,
+                "ios 7",
+                "ios 7.0.1"
             );
-            title = "Participa en #UsoEliPadPara";
+            title = "iOS 7.0.1 disponible para iPhone 5S y 5C";
             unread = 1;
-            updated = 1378114573;
+            updated = 1379704523;
         },
                 {
             "always_display_attachments" = 0;
-            author = admin;
+            author = "Sergio Olivares";
             "comments_count" = 0;
             "comments_link" = "";
-            "feed_id" = 7;
-            "feed_title" = MacToday;
-            id = 301;
+            "feed_id" = 4;
+            "feed_title" = iPadSfera;
+            id = 106;
             "is_updated" = 0;
-            labels = "<null>";
-            link = "http://www.revistamactoday.com/2013/08/30/avance-mactodayseptiembre-a-fondo-crea-tu-web-en-pocos-pasos/";
-            marked = 0;
-            published = 0;
-            score = 0;
-            tags =             (
-                "a fondo",
-                blog
+            labels =             (
             );
-            title = "Avance #mactodayseptiembre: A fondo \U201cCrea tu web en pocos pasos\U201d";
-            unread = 1;
-            updated = 1377864622;
-        },
-                {
-            "always_display_attachments" = 0;
-            author = admin;
-            "comments_count" = 0;
-            "comments_link" = "";
-            "feed_id" = 7;
-            "feed_title" = MacToday;
-            id = 302;
-            "is_updated" = 0;
-            labels = "<null>";
-            link = "http://www.revistamactoday.com/2013/08/29/avance-mactodayseptiembre-adn/";
+            link = "http://feedproxy.google.com/~r/ipadsfera/~3/8a1eO29Hj6s/";
             marked = 0;
             published = 0;
             score = 0;
             tags =             (
-                blog,
-                reportajes,
-                adn
-            );
-            title = "Avance #mactodayseptiembre: ADN";
-            unread = 1;
-            updated = 1377790392;
-        },
-                {
-            "always_display_attachments" = 0;
-            author = admin;
-            "comments_count" = 0;
-            "comments_link" = "";
-            "feed_id" = 7;
-            "feed_title" = MacToday;
-            id = 303;
-            "is_updated" = 0;
-            labels = "<null>";
-            link = "http://www.revistamactoday.com/2013/08/19/el-podcast-de-mactoday-ya-disponible-en-itunes/";
-            marked = 0;
-            published = 0;
-            score = 0;
-            tags =             (
-                blog,
+                apple,
                 noticias,
-                podcast
+                curiosidades,
+                "steve jobs"
             );
-            title = "El podcast de MacToday, ya disponible en iTunes";
+            title = "JOBS llega a los cines espa\U00f1oles";
             unread = 1;
-            updated = 1376916364;
+            updated = 1379695465;
         },
                 {
             "always_display_attachments" = 0;
-            author = admin;
+            author = "Manuel Ajamil";
             "comments_count" = 0;
             "comments_link" = "";
-            "feed_id" = 7;
-            "feed_title" = MacToday;
-            id = 304;
+            "feed_id" = 4;
+            "feed_title" = iPadSfera;
+            id = 107;
             "is_updated" = 0;
-            labels = "<null>";
-            link = "http://www.revistamactoday.com/2013/08/12/como-gestionar-tus-contrasenas-en-ios-7-con-icloud-keychain/";
+            labels =             (
+            );
+            link = "http://feedproxy.google.com/~r/ipadsfera/~3/4h9cSEEB7Mo/";
             marked = 0;
             published = 0;
             score = 0;
             tags =             (
-                blog,
-                tutoriales,
-                icloud
+                "anuncios iphone",
+                apple,
+                "iphone 5c"
             );
-            title = "C\U00f3mo gestionar tus contrase\U00f1as en iOS 7 con iCloud Keychain";
+            title = "Designed Together, nuevo anuncio iPhone 5C";
             unread = 1;
-            updated = 1376298023;
+            updated = 1379575462;
         },
                 {
             "always_display_attachments" = 0;
-            author = admin;
+            author = "Sergio Olivares";
             "comments_count" = 0;
             "comments_link" = "";
-            "feed_id" = 7;
-            "feed_title" = MacToday;
-            id = 305;
+            "feed_id" = 4;
+            "feed_title" = iPadSfera;
+            id = 108;
             "is_updated" = 0;
-            labels = "<null>";
-            link = "http://www.revistamactoday.com/2013/08/08/reportaje-craig-federighi/";
+            labels =             (
+            );
+            link = "http://feedproxy.google.com/~r/ipadsfera/~3/O84geP9xmQY/";
             marked = 0;
             published = 0;
             score = 0;
             tags =             (
-                blog,
-                reportajes
+                "aplicaciones iphone",
+                "aplicaciones iphone social media",
+                curiosidades
             );
-            title = "Reportaje: Craig Federighi";
+            title = "BBM para iPhone disponible el 22 de septiembre";
             unread = 1;
-            updated = 1375960070;
+            updated = 1379549634;
+        },
+                {
+            "always_display_attachments" = 0;
+            author = "Sergio Olivares";
+            "comments_count" = 1;
+            "comments_link" = "";
+            "feed_id" = 4;
+            "feed_title" = iPadSfera;
+            id = 109;
+            "is_updated" = 0;
+            labels =             (
+            );
+            link = "http://feedproxy.google.com/~r/ipadsfera/~3/3-tFqyA1TWU/";
+            marked = 0;
+            published = 0;
+            score = 0;
+            tags =             (
+                apple,
+                ios,
+                noticias,
+                "ios 7"
+            );
+            title = "iOS 7: Ya disponible a todo el p\U00fablico";
+            unread = 1;
+            updated = 1379548562;
+        },
+                {
+            "always_display_attachments" = 0;
+            author = "Sergio Olivares";
+            "comments_count" = 0;
+            "comments_link" = "";
+            "feed_id" = 4;
+            "feed_title" = iPadSfera;
+            id = 110;
+            "is_updated" = 0;
+            labels =             (
+            );
+            link = "http://feedproxy.google.com/~r/ipadsfera/~3/tnr4bKnfMWQ/";
+            marked = 0;
+            published = 0;
+            score = 0;
+            tags =             (
+                apple,
+                eventos,
+                "rumores ipad",
+                keynote,
+                rumores
+            );
+            title = "\U00bfKeynote de Apple el pr\U00f3ximo 15 de octubre?";
+            unread = 1;
+            updated = 1379486411;
+        },
+                {
+            "always_display_attachments" = 0;
+            author = "Manuel Ajamil";
+            "comments_count" = 0;
+            "comments_link" = "";
+            "feed_id" = 4;
+            "feed_title" = iPadSfera;
+            id = 111;
+            "is_updated" = 0;
+            labels =             (
+            );
+            link = "http://feedproxy.google.com/~r/ipadsfera/~3/5fPAS8PHZPc/";
+            marked = 0;
+            published = 0;
+            score = 0;
+            tags =             (
+                "anuncios iphone",
+                apple,
+                curiosidades
+            );
+            title = "Primer anuncio oficial del iPhone 5C";
+            unread = 1;
+            updated = 1379444666;
+        },
+                {
+            "always_display_attachments" = 0;
+            author = "Sergio Olivares";
+            "comments_count" = 0;
+            "comments_link" = "";
+            "feed_id" = 4;
+            "feed_title" = iPadSfera;
+            id = 112;
+            "is_updated" = 0;
+            labels =             (
+            );
+            link = "http://feedproxy.google.com/~r/ipadsfera/~3/0AOlOLMnuN4/";
+            marked = 0;
+            published = 0;
+            score = 0;
+            tags =             (
+                apple,
+                "curiosidades iphone",
+                curiosidades,
+                "iphone 5s"
+            );
+            title = "Primer v\U00eddeo slow-motion desde el iPhone 5S";
+            unread = 1;
+            updated = 1379437256;
         }
     );
     seq = 0;
     status = 0;
 }
-2013-09-23 02:48:50.652 JSONTest[14544:303] stopConnection RESPONSE: {"seq":0,"status":0,"content":{"status":"OK"}}
+2013-09-26 05:07:44.049 JSONTest[138:303] content items: 18
+2013-09-26 05:07:44.050 JSONTest[138:303] title: (null)
+2013-09-26 05:07:44.050 JSONTest[138:303] title: (null)
+2013-09-26 05:07:44.050 JSONTest[138:303] title: (null)
+2013-09-26 05:07:44.051 JSONTest[138:303] title: (null)
+2013-09-26 05:07:44.051 JSONTest[138:303] title: (null)
+2013-09-26 05:07:44.051 JSONTest[138:303] title: (null)
+2013-09-26 05:07:44.051 JSONTest[138:303] title: (null)
+2013-09-26 05:07:44.052 JSONTest[138:303] title: (null)
+2013-09-26 05:07:44.052 JSONTest[138:303] title: (null)
+2013-09-26 05:07:44.052 JSONTest[138:303] title: (null)
+2013-09-26 05:07:44.052 JSONTest[138:303] title: (null)
+2013-09-26 05:07:44.053 JSONTest[138:303] title: (null)
+2013-09-26 05:07:44.053 JSONTest[138:303] title: (null)
+2013-09-26 05:07:44.053 JSONTest[138:303] title: (null)
+2013-09-26 05:07:44.054 JSONTest[138:303] title: (null)
+2013-09-26 05:07:44.054 JSONTest[138:303] title: (null)
+2013-09-26 05:07:44.055 JSONTest[138:303] title: (null)
+2013-09-26 05:07:44.055 JSONTest[138:303] title: (null)
+2013-09-26 05:07:44.055 JSONTest[138:303] 
+
+
+
+ number of headlines: 18 
+
+
+
+2013-09-26 05:07:44.428 JSONTest[138:303] stopConnection RESPONSE: {"seq":0,"status":0,"content":{"status":"OK"}}
 Program ended with exit code: 0
