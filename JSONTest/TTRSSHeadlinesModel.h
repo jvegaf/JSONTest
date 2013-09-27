@@ -28,5 +28,8 @@
 
 -(id) initWithDictionary:(NSDictionary *)aDict;
 
+-(id) initWithTitle:(NSString *)aTitle 
+          feedTitle:(NSString *)aFeedtitle 
+               link:(NSURL *)aLink;
 
 @end

@@ -18,21 +18,43 @@
              updated:(NSInteger)aUpdated
 {
     if (self = [super init]) {
-        aFeedID = _feedID;
-        aAuthor = _author;
-        aFeedID = _feedID;
-        aLink = _link;
-        aTitle = _title;
-        aUpdated = _updated;
+
+        _feedID = aFeedID;
+        _feedTitle = aFeedtitle;
+        _author = aAuthor;
+        _link = aLink;
+        _title = aTitle;
+        _updated = aUpdated;
+        
+
     }
     
     return self;
     
 }
 
+-(id) initWithTitle:(NSString *)aTitle 
+          feedTitle:(NSString *)aFeedtitle 
+               link:(NSURL *)aLink
+{
+	if (self = [super init])
+	{
+		_title = aTitle;
+        _feedTitle = aFeedtitle;
+        _link = aLink;
+	}
+
+	return self;
+}
+
 -(id) initWithDictionary:(NSDictionary *)aDict
 {
-    return [self initWithFeedID:[[aDict objectForKey:@"feed_id"]intValue] author:[aDict objectForKey:@"author"] feedTitle:[aDict objectForKey:@"feed_title"] link:[aDict objectForKey:@"link"] title:[aDict objectForKey:@"title"] updated:[[aDict objectForKey:@"updated"]intValue]];
+    return [self initWithFeedID:[[aDict objectForKey:@"feed_id"]intValue]
+            author:[aDict objectForKey:@"author"]
+            feedTitle:[aDict objectForKey:@"feed_title"]
+            link:[aDict objectForKey:@"link"]
+            title:[aDict objectForKey:@"title"]
+            updated:[[aDict objectForKey:@"updated"]intValue]];
 }
 
 

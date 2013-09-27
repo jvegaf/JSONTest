@@ -240,7 +240,7 @@
         //NSLog(@"getHeadlines RESPONSE: %@\n\n\n\n",[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);;
         NSDictionary *JSONObjects = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
         //test
-        NSLog(@"getHeadlines Dict = %@",JSONObjects);
+        //NSLog(@"getHeadlines Dict = %@",JSONObjects);
         NSArray *contents = [JSONObjects objectForKey:@"content"];
         //test
         NSLog(@"content items: %lu",[contents count]);
@@ -250,7 +250,7 @@
             TTRSSHeadlinesModel *head = [[TTRSSHeadlinesModel alloc]initWithDictionary:aHeadline];
             [headlines addObject:head];
             //test
-            NSLog(@"title: %@",[head title]);
+            NSLog(@"headline title: %@",[head title]);
         }
         //test
         NSLog(@"\n\n\n\n number of headlines: %lu \n\n\n\n",[headlines count]);
