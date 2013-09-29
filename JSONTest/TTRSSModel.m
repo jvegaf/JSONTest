@@ -10,10 +10,11 @@
 #import "TTRSSCategoryModel.h"
 #import "TTRSSFeedModel.h"
 #import "TTRSSHeadlinesModel.h"
+#import "TTRSSArticleModel.h"
 
 @implementation TTRSSModel
 
-@synthesize op,login,user,password,admin,sid,isLoggedIn,logout,getUnread,getFeeds,getCategories,getHeadlines,getArticle,fetchData,unsubscribeFeed,url,keys,objects,session_id,questionDict,categories,feeds,headlines;
+@synthesize op,login,user,password,admin,sid,isLoggedIn,logout,getUnread,getFeeds,getCategories,getHeadlines,getArticle,fetchData,unsubscribeFeed,url,keys,objects,session_id,questionDict,categories,feeds,headlines,articleObject;
 
 
 -(id) init
@@ -155,7 +156,8 @@
     NSURLResponse * response = [[NSURLResponse alloc] init];
     NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
     if (data != nil) {
-        NSLog(@"getCategories RESPONSE: %@ \n\n\n\n\n\n",[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);;
+        //test
+        //NSLog(@"getCategories RESPONSE: %@ \n\n\n\n\n\n",[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);;
         NSDictionary *JSONObjects = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
         //NSLog(@"%@",JSONObjects);
         NSArray *contents = [JSONObjects objectForKey:@"content"];
@@ -251,6 +253,7 @@
             [headlines addObject:head];
             //test
             NSLog(@"headline title: %@",[head title]);
+            NSLog(@"articleID: %lu",[head articleID]);
         }
         //test
         NSLog(@"\n\n\n\n number of headlines: %lu \n\n\n\n",[headlines count]);
@@ -262,6 +265,48 @@
     }
 }
 
+-(void)getArticleWithID
+{
+    keys = @[sid,op,@"article_id"];
+    objects = @[session_id,getArticle,@"104"];
+    questionDict = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:questionDict
+                                                       options:kNilOptions error:&error];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+                                                           cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                                       timeoutInterval:60.0];
+    [request setHTTPMethod:@"POST"];
+    [request setHTTPBody:jsonData];
+    NSURLResponse * response = [[NSURLResponse alloc] init];
+    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    if (data != nil) {
+        //test
+        //NSLog(@"getHeadlines RESPONSE: %@\n\n\n\n",[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);;
+        NSDictionary *JSONObjects = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+        //test
+        //NSLog(@"article Dict = %@",JSONObjects);
+        NSArray *contents = [JSONObjects objectForKey:@"content"];
+        //test
+        NSLog(@"content items: %lu",[contents count]);
+        articleObject = [[NSMutableArray alloc]init];
+        
+        for (NSDictionary *aArticle in contents) {
+            TTRSSArticleModel *article = [[TTRSSArticleModel alloc]initWithDictionary:aArticle];
+            [articleObject addObject:article];
+            //test
+            NSLog(@"article content: %@",[article content]);
+            NSLog(@"article link: %@",[article link]);
+        }
+        
+       
+        
+        
+    }
+    else {
+        NSLog(@"Error: %@",error.localizedDescription);
+    }
+}
 
 
 

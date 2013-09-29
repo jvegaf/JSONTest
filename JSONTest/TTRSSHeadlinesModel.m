@@ -16,6 +16,7 @@
                 link:(NSURL *)aLink
                title:(NSString *)aTitle
              updated:(NSInteger)aUpdated
+           articleID:(NSInteger)aArticleID
 {
     if (self = [super init]) {
 
@@ -25,6 +26,7 @@
         _link = aLink;
         _title = aTitle;
         _updated = aUpdated;
+        _articleID = aArticleID;
         
 
     }
@@ -54,7 +56,8 @@
             feedTitle:[aDict objectForKey:@"feed_title"]
             link:[aDict objectForKey:@"link"]
             title:[aDict objectForKey:@"title"]
-            updated:[[aDict objectForKey:@"updated"]intValue]];
+            updated:[[aDict objectForKey:@"updated"]intValue]
+            articleID:[[aDict objectForKey:@"id"]intValue]];
 }
 
 

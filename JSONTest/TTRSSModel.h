@@ -35,6 +35,8 @@
 @property (nonatomic,strong) NSMutableArray *categories;
 @property (nonatomic,strong) NSMutableArray *feeds;
 @property (nonatomic,strong) NSMutableArray *headlines;
+@property (nonatomic,strong) NSMutableArray *articleObject;
+
 
 
 
@@ -45,5 +47,6 @@
 -(void)isLoggedInWithID;
 -(void)getFeedsWithID;
 -(void)getHeadlinesWithID;
+-(void)getArticleWithID;
 
 @end

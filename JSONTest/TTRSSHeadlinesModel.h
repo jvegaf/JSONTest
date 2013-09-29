@@ -16,6 +16,7 @@
 @property (nonatomic,copy) NSString *feedTitle;
 @property (nonatomic,strong) NSURL *link;
 @property (nonatomic,copy) NSString *title;
+@property (nonatomic) NSInteger articleID;
 
 
 
@@ -24,7 +25,8 @@
            feedTitle:(NSString *)aFeedtitle
                 link:(NSURL *)aLink
                title:(NSString *)aTitle
-             updated:(NSInteger)aUpdated;
+             updated:(NSInteger)aUpdated
+           articleID:(NSInteger)aArticleID;
 
 -(id) initWithDictionary:(NSDictionary *)aDict;
 

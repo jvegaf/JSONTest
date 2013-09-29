@@ -1,93 +1,87 @@
-2013-09-27 03:18:18.699 JSONTest[7454:303] RESPONSE: {"seq":0,"status":0,"content":{"session_id":"shvgk1lh7s2tvbo00e8srbtlj3","api_level":7}}
-2013-09-27 03:18:18.700 JSONTest[7454:303] session id = shvgk1lh7s2tvbo00e8srbtlj3
-2013-09-27 03:18:19.100 JSONTest[7454:303] isLoggedIn RESPONSE: {"seq":0,"status":0,"content":{"status":true}}
-2013-09-27 03:18:19.775 JSONTest[7454:303] getCategories RESPONSE: {"seq":0,"status":0,"content":[{"id":"1","title":"DOMOTICA","unread":25,"order_id":0},{"id":"2","title":"Apple","unread":252,"order_id":0},{"id":"3","title":"PERSONAL","unread":163,"order_id":0},{"id":"4","title":"Linux","unread":358,"order_id":0},{"id":"5","title":"TECHNOLOGY","unread":320,"order_id":0},{"id":"6","title":"GeekThings","unread":21,"order_id":0},{"id":"7","title":"DEVELOPMENT","unread":111,"order_id":0},{"id":-1,"title":"Special","unread":117},{"id":0,"title":"Uncategorized","unread":186}]} 
-
-
-
-
-
-2013-09-27 03:18:19.776 JSONTest[7454:303] categoy added: DOMOTICA
-2013-09-27 03:18:19.777 JSONTest[7454:303] categoy added: Apple
-2013-09-27 03:18:19.778 JSONTest[7454:303] categoy added: PERSONAL
-2013-09-27 03:18:19.778 JSONTest[7454:303] categoy added: Linux
-2013-09-27 03:18:19.778 JSONTest[7454:303] categoy added: TECHNOLOGY
-2013-09-27 03:18:19.778 JSONTest[7454:303] categoy added: GeekThings
-2013-09-27 03:18:19.779 JSONTest[7454:303] categoy added: DEVELOPMENT
-2013-09-27 03:18:19.779 JSONTest[7454:303] categoy added: Special
-2013-09-27 03:18:19.779 JSONTest[7454:303] categoy added: Uncategorized
-2013-09-27 03:18:19.780 JSONTest[7454:303] number of categories in Array: 9
-2013-09-27 03:18:21.196 JSONTest[7454:303] contents items: 69
-2013-09-27 03:18:21.197 JSONTest[7454:303] feed added: Starred articles
-2013-09-27 03:18:21.197 JSONTest[7454:303] feed added: Published articles
-2013-09-27 03:18:21.197 JSONTest[7454:303] feed added: Fresh articles
-2013-09-27 03:18:21.197 JSONTest[7454:303] feed added: All articles
-2013-09-27 03:18:21.197 JSONTest[7454:303] feed added: Recently read
-2013-09-27 03:18:21.198 JSONTest[7454:303] feed added: Archived articles
-2013-09-27 03:18:21.198 JSONTest[7454:303] feed added: 0xDA_bit
-2013-09-27 03:18:21.199 JSONTest[7454:303] feed added: Core dumped
-2013-09-27 03:18:21.199 JSONTest[7454:303] feed added: Elblogsalmon
-2013-09-27 03:18:21.200 JSONTest[7454:303] feed added: NSScreencast (free videos)
-2013-09-27 03:18:21.201 JSONTest[7454:303] feed added: Tiny Tiny RSS: Forum
-2013-09-27 03:18:21.201 JSONTest[7454:303] feed added: Tiny Tiny RSS: New Releases
-2013-09-27 03:18:21.202 JSONTest[7454:303] feed added: Torcelly
-2013-09-27 03:18:21.202 JSONTest[7454:303] feed added: Mis experiencias con la Raspberry Pi
-2013-09-27 03:18:21.203 JSONTest[7454:303] feed added: 9to5Mac
-2013-09-27 03:18:21.203 JSONTest[7454:303] feed added: Applesfera
-2013-09-27 03:18:21.203 JSONTest[7454:303] feed added: AppleWeblog
-2013-09-27 03:18:21.204 JSONTest[7454:303] feed added: iPadSfera
-2013-09-27 03:18:21.204 JSONTest[7454:303] feed added: MacToday
-2013-09-27 03:18:21.205 JSONTest[7454:303] feed added: Minimal Mac
-2013-09-27 03:18:21.205 JSONTest[7454:303] feed added: Bilal Syed Hussain
-2013-09-27 03:18:21.205 JSONTest[7454:303] feed added: Blog de Raúl Pérez
-2013-09-27 03:18:21.205 JSONTest[7454:303] feed added: Fickle Bits
-2013-09-27 03:18:21.205 JSONTest[7454:303] feed added: freniche.com: iPhone, Java, Macs, Linux...
-2013-09-27 03:18:21.206 JSONTest[7454:303] feed added: Hackaya Development
-2013-09-27 03:18:21.206 JSONTest[7454:303] feed added: http://m3drano.blogspot.com/feeds/posts/default
-2013-09-27 03:18:21.206 JSONTest[7454:303] feed added: Jorge Izquierdo Blog
-2013-09-27 03:18:21.207 JSONTest[7454:303] feed added: Jose A. Lobato Blog
-2013-09-27 03:18:21.207 JSONTest[7454:303] feed added: Michael Hall
-2013-09-27 03:18:21.208 JSONTest[7454:303] feed added: Miguel de Icaza
-2013-09-27 03:18:21.208 JSONTest[7454:303] feed added: Ruido blanco
-2013-09-27 03:18:21.208 JSONTest[7454:303] feed added: Sergio's Blog
-2013-09-27 03:18:21.209 JSONTest[7454:303] feed added: atareao
-2013-09-27 03:18:21.209 JSONTest[7454:303] feed added: Canonical Design
-2013-09-27 03:18:21.209 JSONTest[7454:303] feed added: Full Circle Magazine
-2013-09-27 03:18:21.209 JSONTest[7454:303] feed added: jonobacon@home
-2013-09-27 03:18:21.211 JSONTest[7454:303] feed added: Journal | elementary
-2013-09-27 03:18:21.211 JSONTest[7454:303] feed added: Libuntu
-2013-09-27 03:18:21.212 JSONTest[7454:303] feed added: OMG! Ubuntu! | Everything Ubuntu. Daily.
-2013-09-27 03:18:21.213 JSONTest[7454:303] feed added: orvtech: Linux, Android, BASH Scripts, y Fedora
-2013-09-27 03:18:21.213 JSONTest[7454:303] feed added: Paraiso Linux
-2013-09-27 03:18:21.213 JSONTest[7454:303] feed added: Pillateunlinux
-2013-09-27 03:18:21.214 JSONTest[7454:303] feed added: Planet Ubuntu
-2013-09-27 03:18:21.214 JSONTest[7454:303] feed added: Raspberry Pi
-2013-09-27 03:18:21.215 JSONTest[7454:303] feed added: soloUbuntu
-2013-09-27 03:18:21.215 JSONTest[7454:303] feed added: Taking Ubuntu Touch Developer Preview to new levels | Ubuntu ...
-2013-09-27 03:18:21.215 JSONTest[7454:303] feed added: The mag Pi
-2013-09-27 03:18:21.216 JSONTest[7454:303] feed added: Ubuntu & Software libre
-2013-09-27 03:18:21.216 JSONTest[7454:303] feed added: Ubuntu App Developer
-2013-09-27 03:18:21.216 JSONTest[7454:303] feed added: Ubuntu Móvil
-2013-09-27 03:18:21.216 JSONTest[7454:303] feed added: Ubuntu Podcast
-2013-09-27 03:18:21.217 JSONTest[7454:303] feed added: Ubuntu Touch Journey
-2013-09-27 03:18:21.217 JSONTest[7454:303] feed added: Ubuntu UK
-2013-09-27 03:18:21.217 JSONTest[7454:303] feed added: Un bruto con Debian
-2013-09-27 03:18:21.217 JSONTest[7454:303] feed added: Web Upd8 - Ubuntu / Linux blog
-2013-09-27 03:18:21.218 JSONTest[7454:303] feed added: ALT1040
-2013-09-27 03:18:21.218 JSONTest[7454:303] feed added: BricoGeek.com Blog
-2013-09-27 03:18:21.218 JSONTest[7454:303] feed added: Pirate 3D - Blog
-2013-09-27 03:18:21.219 JSONTest[7454:303] feed added: Planeta Red - Las últimas noticias sobre tecnología, móviles e Internet
-2013-09-27 03:18:21.219 JSONTest[7454:303] feed added: Xataka
-2013-09-27 03:18:21.219 JSONTest[7454:303] feed added: Xatakahome
-2013-09-27 03:18:21.220 JSONTest[7454:303] feed added: No Puedo Creer
-2013-09-27 03:18:21.220 JSONTest[7454:303] feed added: 85% COCOA
-2013-09-27 03:18:21.221 JSONTest[7454:303] feed added: Algorithm problems for dummies: Petr Mitrichev's blog
-2013-09-27 03:18:21.221 JSONTest[7454:303] feed added: Blog 'Programar a ciegas' de Discapnet
-2013-09-27 03:18:21.222 JSONTest[7454:303] feed added: Cocoa Is My Girlfriend
-2013-09-27 03:18:21.222 JSONTest[7454:303] feed added: Genbetadev
-2013-09-27 03:18:21.222 JSONTest[7454:303] feed added: Programar a ciegas
-2013-09-27 03:18:21.223 JSONTest[7454:303] feed added: We.Developers | El programa hecho por desarrolladores para ...
-2013-09-27 03:18:21.223 JSONTest[7454:303] 
+2013-09-29 05:22:05.606 JSONTest[23172:303] RESPONSE: {"seq":0,"status":0,"content":{"session_id":"mffdng7qursmnomuh8spk1qbg1","api_level":7}}
+2013-09-29 05:22:05.608 JSONTest[23172:303] session id = mffdng7qursmnomuh8spk1qbg1
+2013-09-29 05:22:06.008 JSONTest[23172:303] isLoggedIn RESPONSE: {"seq":0,"status":0,"content":{"status":true}}
+2013-09-29 05:22:06.448 JSONTest[23172:303] categoy added: DOMOTICA
+2013-09-29 05:22:06.449 JSONTest[23172:303] categoy added: Apple
+2013-09-29 05:22:06.449 JSONTest[23172:303] categoy added: PERSONAL
+2013-09-29 05:22:06.449 JSONTest[23172:303] categoy added: Linux
+2013-09-29 05:22:06.449 JSONTest[23172:303] categoy added: TECHNOLOGY
+2013-09-29 05:22:06.450 JSONTest[23172:303] categoy added: GeekThings
+2013-09-29 05:22:06.450 JSONTest[23172:303] categoy added: DEVELOPMENT
+2013-09-29 05:22:06.451 JSONTest[23172:303] categoy added: Special
+2013-09-29 05:22:06.451 JSONTest[23172:303] categoy added: Uncategorized
+2013-09-29 05:22:06.452 JSONTest[23172:303] number of categories in Array: 9
+2013-09-29 05:22:06.987 JSONTest[23172:303] contents items: 69
+2013-09-29 05:22:06.987 JSONTest[23172:303] feed added: Starred articles
+2013-09-29 05:22:06.988 JSONTest[23172:303] feed added: Published articles
+2013-09-29 05:22:06.988 JSONTest[23172:303] feed added: Fresh articles
+2013-09-29 05:22:06.988 JSONTest[23172:303] feed added: All articles
+2013-09-29 05:22:06.989 JSONTest[23172:303] feed added: Recently read
+2013-09-29 05:22:06.989 JSONTest[23172:303] feed added: Archived articles
+2013-09-29 05:22:06.989 JSONTest[23172:303] feed added: 0xDA_bit
+2013-09-29 05:22:06.989 JSONTest[23172:303] feed added: Core dumped
+2013-09-29 05:22:06.990 JSONTest[23172:303] feed added: Elblogsalmon
+2013-09-29 05:22:06.990 JSONTest[23172:303] feed added: NSScreencast (free videos)
+2013-09-29 05:22:06.990 JSONTest[23172:303] feed added: Tiny Tiny RSS: Forum
+2013-09-29 05:22:06.991 JSONTest[23172:303] feed added: Tiny Tiny RSS: New Releases
+2013-09-29 05:22:06.991 JSONTest[23172:303] feed added: Torcelly
+2013-09-29 05:22:06.991 JSONTest[23172:303] feed added: Mis experiencias con la Raspberry Pi
+2013-09-29 05:22:06.993 JSONTest[23172:303] feed added: 9to5Mac
+2013-09-29 05:22:06.993 JSONTest[23172:303] feed added: Applesfera
+2013-09-29 05:22:06.994 JSONTest[23172:303] feed added: AppleWeblog
+2013-09-29 05:22:06.994 JSONTest[23172:303] feed added: iPadSfera
+2013-09-29 05:22:06.994 JSONTest[23172:303] feed added: MacToday
+2013-09-29 05:22:06.995 JSONTest[23172:303] feed added: Minimal Mac
+2013-09-29 05:22:06.995 JSONTest[23172:303] feed added: Bilal Syed Hussain
+2013-09-29 05:22:06.995 JSONTest[23172:303] feed added: Blog de Raúl Pérez
+2013-09-29 05:22:06.995 JSONTest[23172:303] feed added: Fickle Bits
+2013-09-29 05:22:06.997 JSONTest[23172:303] feed added: freniche.com: iPhone, Java, Macs, Linux...
+2013-09-29 05:22:06.998 JSONTest[23172:303] feed added: Hackaya Development
+2013-09-29 05:22:06.998 JSONTest[23172:303] feed added: http://m3drano.blogspot.com/feeds/posts/default
+2013-09-29 05:22:06.999 JSONTest[23172:303] feed added: Jorge Izquierdo Blog
+2013-09-29 05:22:07.000 JSONTest[23172:303] feed added: Jose A. Lobato Blog
+2013-09-29 05:22:07.000 JSONTest[23172:303] feed added: Michael Hall
+2013-09-29 05:22:07.001 JSONTest[23172:303] feed added: Miguel de Icaza
+2013-09-29 05:22:07.001 JSONTest[23172:303] feed added: Ruido blanco
+2013-09-29 05:22:07.001 JSONTest[23172:303] feed added: Sergio's Blog
+2013-09-29 05:22:07.002 JSONTest[23172:303] feed added: atareao
+2013-09-29 05:22:07.002 JSONTest[23172:303] feed added: Canonical Design
+2013-09-29 05:22:07.002 JSONTest[23172:303] feed added: Full Circle Magazine
+2013-09-29 05:22:07.003 JSONTest[23172:303] feed added: jonobacon@home
+2013-09-29 05:22:07.003 JSONTest[23172:303] feed added: Journal | elementary
+2013-09-29 05:22:07.003 JSONTest[23172:303] feed added: Libuntu
+2013-09-29 05:22:07.004 JSONTest[23172:303] feed added: OMG! Ubuntu! | Everything Ubuntu. Daily.
+2013-09-29 05:22:07.004 JSONTest[23172:303] feed added: orvtech: Linux, Android, BASH Scripts, y Fedora
+2013-09-29 05:22:07.004 JSONTest[23172:303] feed added: Paraiso Linux
+2013-09-29 05:22:07.005 JSONTest[23172:303] feed added: Pillateunlinux
+2013-09-29 05:22:07.005 JSONTest[23172:303] feed added: Planet Ubuntu
+2013-09-29 05:22:07.005 JSONTest[23172:303] feed added: Raspberry Pi
+2013-09-29 05:22:07.005 JSONTest[23172:303] feed added: soloUbuntu
+2013-09-29 05:22:07.006 JSONTest[23172:303] feed added: Taking Ubuntu Touch Developer Preview to new levels | Ubuntu ...
+2013-09-29 05:22:07.006 JSONTest[23172:303] feed added: The mag Pi
+2013-09-29 05:22:07.006 JSONTest[23172:303] feed added: Ubuntu & Software libre
+2013-09-29 05:22:07.006 JSONTest[23172:303] feed added: Ubuntu App Developer
+2013-09-29 05:22:07.007 JSONTest[23172:303] feed added: Ubuntu Móvil
+2013-09-29 05:22:07.007 JSONTest[23172:303] feed added: Ubuntu Podcast
+2013-09-29 05:22:07.007 JSONTest[23172:303] feed added: Ubuntu Touch Journey
+2013-09-29 05:22:07.007 JSONTest[23172:303] feed added: Ubuntu UK
+2013-09-29 05:22:07.009 JSONTest[23172:303] feed added: Un bruto con Debian
+2013-09-29 05:22:07.009 JSONTest[23172:303] feed added: Web Upd8 - Ubuntu / Linux blog
+2013-09-29 05:22:07.009 JSONTest[23172:303] feed added: ALT1040
+2013-09-29 05:22:07.010 JSONTest[23172:303] feed added: BricoGeek.com Blog
+2013-09-29 05:22:07.010 JSONTest[23172:303] feed added: Pirate 3D - Blog
+2013-09-29 05:22:07.010 JSONTest[23172:303] feed added: Planeta Red - Las últimas noticias sobre tecnología, móviles e Internet
+2013-09-29 05:22:07.011 JSONTest[23172:303] feed added: Xataka
+2013-09-29 05:22:07.011 JSONTest[23172:303] feed added: Xatakahome
+2013-09-29 05:22:07.012 JSONTest[23172:303] feed added: No Puedo Creer
+2013-09-29 05:22:07.012 JSONTest[23172:303] feed added: 85% COCOA
+2013-09-29 05:22:07.012 JSONTest[23172:303] feed added: Algorithm problems for dummies: Petr Mitrichev's blog
+2013-09-29 05:22:07.013 JSONTest[23172:303] feed added: Blog 'Programar a ciegas' de Discapnet
+2013-09-29 05:22:07.013 JSONTest[23172:303] feed added: Cocoa Is My Girlfriend
+2013-09-29 05:22:07.014 JSONTest[23172:303] feed added: Genbetadev
+2013-09-29 05:22:07.014 JSONTest[23172:303] feed added: Programar a ciegas
+2013-09-29 05:22:07.015 JSONTest[23172:303] feed added: We.Developers | El programa hecho por desarrolladores para ...
+2013-09-29 05:22:07.015 JSONTest[23172:303] 
 
 
 
@@ -95,33 +89,79 @@
 
 
 
-2013-09-27 03:18:21.706 JSONTest[7454:303] content items: 19
-2013-09-27 03:18:21.706 JSONTest[7454:303] headline title: iOS 7.0.2 ya disponible para descargar
-2013-09-27 03:18:21.706 JSONTest[7454:303] headline title: WhatsApp para iOS 7 posiblemente filtrado
-2013-09-27 03:18:21.707 JSONTest[7454:303] headline title: iMessage para Android, un peligro en toda regla
-2013-09-27 03:18:21.708 JSONTest[7454:303] headline title: El Touch ID del iPhone 5s es hackeado
-2013-09-27 03:18:21.708 JSONTest[7454:303] headline title: 22 millones de españoles usan apps a diario y se descargan 4 millones al día
-2013-09-27 03:18:21.708 JSONTest[7454:303] headline title: Apple incrementa de 50MB a 100MB la descarga de aplicaciones mediante datos móviles
-2013-09-27 03:18:21.709 JSONTest[7454:303] headline title: La demanda del iPhone 5S y la acogida de iOS 7 rompen todas las expectativas
-2013-09-27 03:18:21.709 JSONTest[7454:303] headline title: BBM pausa su lanzamiento en iPhone y Android
-2013-09-27 03:18:21.710 JSONTest[7454:303] headline title: Sidekick Cycle, un juego solidario que regala bicicletas reales en África
-2013-09-27 03:18:21.710 JSONTest[7454:303] headline title: iOS 7 bloquea los cables Lightning no oficiales
-2013-09-27 03:18:21.711 JSONTest[7454:303] headline title: WhatsApp para iOS 7 podría ser así
-2013-09-27 03:18:21.711 JSONTest[7454:303] headline title: iOS 7.0.1 disponible para iPhone 5S y 5C
-2013-09-27 03:18:21.712 JSONTest[7454:303] headline title: JOBS llega a los cines españoles
-2013-09-27 03:18:21.712 JSONTest[7454:303] headline title: Designed Together, nuevo anuncio iPhone 5C
-2013-09-27 03:18:21.712 JSONTest[7454:303] headline title: BBM para iPhone disponible el 22 de septiembre
-2013-09-27 03:18:21.712 JSONTest[7454:303] headline title: iOS 7: Ya disponible a todo el público
-2013-09-27 03:18:21.713 JSONTest[7454:303] headline title: ¿Keynote de Apple el próximo 15 de octubre?
-2013-09-27 03:18:21.713 JSONTest[7454:303] headline title: Primer anuncio oficial del iPhone 5C
-2013-09-27 03:18:21.713 JSONTest[7454:303] headline title: Primer vídeo slow-motion desde el iPhone 5S
-2013-09-27 03:18:21.714 JSONTest[7454:303] 
+2013-09-29 05:22:07.471 JSONTest[23172:303] content items: 24
+2013-09-29 05:22:07.472 JSONTest[23172:303] headline title: El modo avión del iPhone podría ser permitido durante el despegue y aterrizaje
+2013-09-29 05:22:07.473 JSONTest[23172:303] articleID: 1553
+2013-09-29 05:22:07.474 JSONTest[23172:303] headline title: Delta Airlines prefiere el Surface 2 para sus pilotos en vez del iPad
+2013-09-29 05:22:07.475 JSONTest[23172:303] articleID: 1551
+2013-09-29 05:22:07.476 JSONTest[23172:303] headline title: JOBS, la crítica de un Apple fanboy más
+2013-09-29 05:22:07.477 JSONTest[23172:303] articleID: 1550
+2013-09-29 05:22:07.480 JSONTest[23172:303] headline title: Posible iPad mini 2 Gold filtrado
+2013-09-29 05:22:07.481 JSONTest[23172:303] articleID: 1512
+2013-09-29 05:22:07.482 JSONTest[23172:303] headline title: Product (RED) de Apple ha generado 65 millones de dólares
+2013-09-29 05:22:07.483 JSONTest[23172:303] articleID: 1513
+2013-09-29 05:22:07.484 JSONTest[23172:303] headline title: iOS 7.0.2 ya disponible para descargar
+2013-09-29 05:22:07.485 JSONTest[23172:303] articleID: 1429
+2013-09-29 05:22:07.485 JSONTest[23172:303] headline title: WhatsApp para iOS 7 posiblemente filtrado
+2013-09-29 05:22:07.487 JSONTest[23172:303] articleID: 1224
+2013-09-29 05:22:07.488 JSONTest[23172:303] headline title: iMessage para Android, un peligro en toda regla
+2013-09-29 05:22:07.488 JSONTest[23172:303] articleID: 1160
+2013-09-29 05:22:07.488 JSONTest[23172:303] headline title: El Touch ID del iPhone 5s es hackeado
+2013-09-29 05:22:07.488 JSONTest[23172:303] articleID: 1117
+2013-09-29 05:22:07.489 JSONTest[23172:303] headline title: 22 millones de españoles usan apps a diario y se descargan 4 millones al día
+2013-09-29 05:22:07.489 JSONTest[23172:303] articleID: 993
+2013-09-29 05:22:07.489 JSONTest[23172:303] headline title: Apple incrementa de 50MB a 100MB la descarga de aplicaciones mediante datos móviles
+2013-09-29 05:22:07.490 JSONTest[23172:303] articleID: 982
+2013-09-29 05:22:07.490 JSONTest[23172:303] headline title: La demanda del iPhone 5S y la acogida de iOS 7 rompen todas las expectativas
+2013-09-29 05:22:07.491 JSONTest[23172:303] articleID: 942
+2013-09-29 05:22:07.491 JSONTest[23172:303] headline title: BBM pausa su lanzamiento en iPhone y Android
+2013-09-29 05:22:07.492 JSONTest[23172:303] articleID: 931
+2013-09-29 05:22:07.492 JSONTest[23172:303] headline title: Sidekick Cycle, un juego solidario que regala bicicletas reales en África
+2013-09-29 05:22:07.492 JSONTest[23172:303] articleID: 932
+2013-09-29 05:22:07.492 JSONTest[23172:303] headline title: iOS 7 bloquea los cables Lightning no oficiales
+2013-09-29 05:22:07.493 JSONTest[23172:303] articleID: 103
+2013-09-29 05:22:07.494 JSONTest[23172:303] headline title: WhatsApp para iOS 7 podría ser así
+2013-09-29 05:22:07.494 JSONTest[23172:303] articleID: 104
+2013-09-29 05:22:07.494 JSONTest[23172:303] headline title: iOS 7.0.1 disponible para iPhone 5S y 5C
+2013-09-29 05:22:07.495 JSONTest[23172:303] articleID: 105
+2013-09-29 05:22:07.495 JSONTest[23172:303] headline title: JOBS llega a los cines españoles
+2013-09-29 05:22:07.496 JSONTest[23172:303] articleID: 106
+2013-09-29 05:22:07.496 JSONTest[23172:303] headline title: Designed Together, nuevo anuncio iPhone 5C
+2013-09-29 05:22:07.497 JSONTest[23172:303] articleID: 107
+2013-09-29 05:22:07.497 JSONTest[23172:303] headline title: BBM para iPhone disponible el 22 de septiembre
+2013-09-29 05:22:07.498 JSONTest[23172:303] articleID: 108
+2013-09-29 05:22:07.498 JSONTest[23172:303] headline title: iOS 7: Ya disponible a todo el público
+2013-09-29 05:22:07.498 JSONTest[23172:303] articleID: 109
+2013-09-29 05:22:07.498 JSONTest[23172:303] headline title: ¿Keynote de Apple el próximo 15 de octubre?
+2013-09-29 05:22:07.499 JSONTest[23172:303] articleID: 110
+2013-09-29 05:22:07.499 JSONTest[23172:303] headline title: Primer anuncio oficial del iPhone 5C
+2013-09-29 05:22:07.500 JSONTest[23172:303] articleID: 111
+2013-09-29 05:22:07.500 JSONTest[23172:303] headline title: Primer vídeo slow-motion desde el iPhone 5S
+2013-09-29 05:22:07.500 JSONTest[23172:303] articleID: 112
+2013-09-29 05:22:07.501 JSONTest[23172:303] 
 
 
 
- number of headlines: 19 
+ number of headlines: 24 
 
 
 
-2013-09-27 03:18:22.112 JSONTest[7454:303] stopConnection RESPONSE: {"seq":0,"status":0,"content":{"status":"OK"}}
+2013-09-29 05:22:07.907 JSONTest[23172:303] content items: 1
+2013-09-29 05:22:07.907 JSONTest[23172:303] article content: <p><img class="aligncenter size-full wp-image-59755" alt="WhatsApp iOS 7 (1)" src="http://www.ipadsfera.com/wp-content/uploads/2013/09/WhatsApp-iOS-7-1.jpg" width="650" height="360" /></p>
+<p><strong>WhatsApp para iOS 7</strong> es una de las actualizaciones más esperadas por todos los usuarios que se han instalado el nuevo sistema operativo de Apple en sus dispositivos, sin embargo, todavía no sabemos cuándo decidirán sus desarrolladores adaptar su aplicación a iOS 7.<span id="more-59754"></span></p>
+<p>Si ya habéis actualizado vuestro iPhone a <span style="color: #278ec9;"><a title="iOS 7" href="http://www.ipadsfera.com/tag/ios-7/" target="_blank"><span style="color: #278ec9;">iOS 7</span></a></span> habréis podido comprobar en vuestras propias carnes que <strong>WhatsApp</strong> ha quedado totalmente obsoleto en el rediseñado iOS de <em>Jony Ives</em>. Tanto ha sido el cambio de la nueva versión de este sistema operativo, que aplicaciones como WhatsApp ha pasado de la noche a la mañana a quedar totalmente anticuadas en cuanto a estética se refiere.</p>
+<p><img class="aligncenter size-full wp-image-59756" alt="WhatsApp iOS 7 (2)" src="http://www.ipadsfera.com/wp-content/uploads/2013/09/WhatsApp-iOS-7-2.jpg" width="650" height="360" /></p>
+<p>Durante los días previos a la salida oficial de <strong>iOS 7</strong>, y sobre todo durante las horas anteriores, el <strong>App Store</strong> echaba chispas debido a la cantidad de actualizaciones que iban apareciendo. Desde que Apple presentó su nuevo sistema operativo en el <span style="color: #278ec9;"><a title="WWDC" href="http://www.ipadsfera.com/tag/wwdc/" target="_blank"><span style="color: #278ec9;">WWDC</span></a></span> 2013, muchos fueron los desarrolladores que se pusieron manos a la obra para comenzar a adaptar sus aplicaciones al nuevo diseño y funcionalidades de iOS 7. Sin embargo, parece que otros no han hecho sus deberes.</p>
+<p>A día de hoy, <span style="color: #278ec9;"><a title="WhatsApp" href="http://www.ipadsfera.com/tag/whatsapp/" target="_blank"><span style="color: #278ec9;">WhatsApp</span></a></span> es una de las aplicaciones con más éxito del App Store. Raro es ver un iPhone sin esta app de mensajería instantánea. Aún así, sus usuarios sabemos a ciencia cierta que raras son las veces que esta aplicación recibe actualizaciones, y que desde que salió al mercado su diseño y estructura apenas ha sufrido cambios importantes.</p>
+<p><img class="aligncenter size-full wp-image-59757" alt="WhatsApp iOS 7 (3)" src="http://www.ipadsfera.com/wp-content/uploads/2013/09/WhatsApp-iOS-7-3.jpg" width="650" height="360" /></p>
+<p>Cuando Apple sacó a la venta el <span style="color: #278ec9;"><a title="iPhone 5" href="http://www.ipadsfera.com/tag/iphone-5/" target="_blank"><span style="color: #278ec9;">iPhone 5</span></a></span>, tuvieron que pasar meses hasta que los desarrolladores de <strong>WhatsApp</strong> adaptasen su aplicación a la nueva pantalla del iPhone. Y si todo sigue de este modo, parece que la historia volverá a repetirse y todavía pasará mucho tiempo hasta que el App Store nos avise de una nueva actualización que renueve por completo esta app y la adapte a la última versión de iOS.</p>
+<p>Lo que en este artículo os enseñamos en una posible versión no oficial de cómo podría ser <strong>WhatsApp para iOS 7</strong>. Un montaje en toda regla de lo que nos gustaría ver en una futura actualización de la <span style="color: #278ec9;"><a title="Aplicaciones iPhone Social Media" href="http://www.ipadsfera.com/category/redes-sociales-aplicaciones-iphone/" target="_blank"><span style="color: #278ec9;">aplicación de mensajería instantánea</span></a></span> por excelencia. Diseño plano, desplazamientos laterales, nuevas funcionalidades&#8230; <em>¡Una mejora en toda regla!.</em></p>
+<p><img class="aligncenter size-full wp-image-59758" alt="WhatsApp iOS 7 (4)" src="http://www.ipadsfera.com/wp-content/uploads/2013/09/WhatsApp-iOS-7-4.jpg" width="650" height="360" /></p>
+<p>No debemos olvidar que iOS 7 ha incorporado más de 200 nuevas funcionalidades. De cada desarrollador depende el adaptar las aplicaciones e insertar alguna de estas novedades o no. Sin embargo, cuando has creado una con tanto éxito a nivel mundial como WhatsApp, el adaptarla y tenerla a la última debería de ser un &#8220;<em>Must Do</em>&#8220;, sobre todo más cuando tu aplicación hasta hace unos meses era de pago como es en este caso.</p>
+<p>Nuestra opinión en este caso es muy clara. WhatsApp debería actualizarse cuanto antes y sorprender a todos sus usuarios de iPhone con un nuevo diseño y funcionalidades. Y vosotros, <em>¿qué opináis sobre este tema? ¿Os parece que ha quedado anticuada en iOS 7 o realmente no os importa su parte estética?</em> ¡Esperamos vuestros comentarios!.</p>
+<p>La entrada <a href="http://www.ipadsfera.com/2013/09/21/whatsapp-para-ios-7-podria-ser-asi/">WhatsApp para iOS 7 podría ser así</a> aparece primero en <a href="http://www.ipadsfera.com"></a>.</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~ff/ipadsfera?a=wdUEOSBqMjM:eI5c_JNgBTM:I6XUs5doX9E"><img src="http://feeds.feedburner.com/~ff/ipadsfera?d=I6XUs5doX9E" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/ipadsfera?a=wdUEOSBqMjM:eI5c_JNgBTM:eGsvOQA_ZiE"><img src="http://feeds.feedburner.com/~ff/ipadsfera?d=eGsvOQA_ZiE" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/ipadsfera?a=wdUEOSBqMjM:eI5c_JNgBTM:9zbFLPM_-mE"><img src="http://feeds.feedburner.com/~ff/ipadsfera?d=9zbFLPM_-mE" border="0"></img></a> <a href="http://feeds.feedburner.com/~ff/ipadsfera?a=wdUEOSBqMjM:eI5c_JNgBTM:tKBiNdHYW3c"><img src="http://feeds.feedburner.com/~ff/ipadsfera?d=tKBiNdHYW3c" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/ipadsfera/~4/wdUEOSBqMjM" height="1" width="1"/>
+2013-09-29 05:22:07.912 JSONTest[23172:303] article link: http://feedproxy.google.com/~r/ipadsfera/~3/wdUEOSBqMjM/
+2013-09-29 05:22:08.301 JSONTest[23172:303] stopConnection RESPONSE: {"seq":0,"status":0,"content":{"status":"OK"}}
 Program ended with exit code: 0

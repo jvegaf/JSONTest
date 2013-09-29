@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		820EFC2317F7CA8B00D2F48E /* TTRSSArticleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 820EFC2217F7CA8B00D2F48E /* TTRSSArticleModel.m */; };
 		823A5DA917E9546A0099B5B0 /* TTRSSCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 823A5DA817E9546A0099B5B0 /* TTRSSCategoryModel.m */; };
 		824F2D7D17F3BF34007C1801 /* TTRSSHeadlinesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 824F2D7C17F3BF34007C1801 /* TTRSSHeadlinesModel.m */; };
 		8262888617D940F200D0B6A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262888517D940F200D0B6A0 /* Foundation.framework */; };
@@ -30,6 +31,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		820EFC2117F7CA8B00D2F48E /* TTRSSArticleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRSSArticleModel.h; sourceTree = "<group>"; };
+		820EFC2217F7CA8B00D2F48E /* TTRSSArticleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRSSArticleModel.m; sourceTree = "<group>"; };
 		823A5DA717E9546A0099B5B0 /* TTRSSCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRSSCategoryModel.h; sourceTree = "<group>"; };
 		823A5DA817E9546A0099B5B0 /* TTRSSCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRSSCategoryModel.m; sourceTree = "<group>"; };
 		824F2D7B17F3BF34007C1801 /* TTRSSHeadlinesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRSSHeadlinesModel.h; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 				828720A717F262BE009115E5 /* TTRSSFeedModel.m */,
 				824F2D7B17F3BF34007C1801 /* TTRSSHeadlinesModel.h */,
 				824F2D7C17F3BF34007C1801 /* TTRSSHeadlinesModel.m */,
+				820EFC2117F7CA8B00D2F48E /* TTRSSArticleModel.h */,
+				820EFC2217F7CA8B00D2F48E /* TTRSSArticleModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 				823A5DA917E9546A0099B5B0 /* TTRSSCategoryModel.m in Sources */,
 				82F341B417E3D8F1009B8C9A /* TTRSSModel.m in Sources */,
 				8262888917D940F200D0B6A0 /* main.m in Sources */,
+				820EFC2317F7CA8B00D2F48E /* TTRSSArticleModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
