@@ -29,6 +29,6 @@
                title:(NSString *)aTitle;
 
 -(id) initWithDictionary:(NSDictionary *)aDict;
-
+-(NSString *)formatedContent:(NSString *)preContent;
 
 @end

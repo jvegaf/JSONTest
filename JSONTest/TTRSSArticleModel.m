@@ -37,12 +37,22 @@
 {
     return [self initWithAuthor:[aDict objectForKey:@"author"]
                        comments:[aDict objectForKey:@"comments"]
-                        content:[aDict objectForKey:@"content"]
+                        content:[self formatedContent:[aDict objectForKey:@"content"]]
                          feedID:[[aDict objectForKey:@"feed_id"]intValue]
                       feedTitle:[aDict objectForKey:@"feed_title"]
                       articleID:[[aDict objectForKey:@"id"]intValue]
                            link:[aDict objectForKey:@"link"]
                           title:[aDict objectForKey:@"title"]];
 }
+
+-(NSString *)formatedContent:(NSString *)preContent
+{
+    NSArray *stringsArray = @[@"<html><head></head><body>",preContent,@"</body></html>"];
+    NSString *finalContent = [stringsArray componentsJoinedByString:@""];
+    NSLog(@"Final content:%@",finalContent);
+    return finalContent;
+}
+
+
 
 @end
