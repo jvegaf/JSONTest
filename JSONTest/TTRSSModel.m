@@ -14,28 +14,15 @@
 
 @implementation TTRSSModel
 
-@synthesize op,login,user,password,admin,sid,isLoggedIn,logout,getUnread,getFeeds,getCategories,getHeadlines,getArticle,fetchData,unsubscribeFeed,url,keys,objects,session_id,questionDict,categories,feeds,headlines,articleObject;
-
 
 -(id) init
 {
     if ((self = [super init])){
-        op = @"op";
-        login = @"login";
-        user = @"user";
-        password = @"password";
-        admin = @"admin";
-        sid = @"sid";
-        isLoggedIn = @"isLoggedIn";
-        logout = @"logout";
-        getUnread = @"getUnread";
-        getFeeds = @"getFeeds";
-        getCategories = @"getCategories";
-        getHeadlines = @"getHeadlines";
-        getArticle = @"getArticle";
-        fetchData = @"fetchData";
-        unsubscribeFeed = @"unsubscribeFeed";
-        url = [NSURL URLWithString:@"http://tosukapetaka.dyndns.info/tt-rss/api/"];
+        
+        _defaults = [NSUserDefaults standardUserDefaults];
+        _url = [NSURL URLWithString:[_defaults objectForKey:@"URL"]];
+        NSLog(@"URL:%@",_url);
+        //_url = [NSURL URLWithString:@"http://10.0.1.207/tt-rss/api/"];
     }
     return self;
 }
@@ -45,22 +32,22 @@
 -(void)startConnection
 {
     // prepare the dictionary
-    keys = @[op,user,password];
-    objects = @[login,admin,admin];
+    _keys = @[@"op",@"user",@"password"];
+    _objects = @[@"login",[_defaults objectForKey:@"USERNAME"],[_defaults objectForKey:@"PASSWORD"]];
     // create the d¡ctionary
-    questionDict = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
+    _questionDict = [NSDictionary dictionaryWithObjects:_objects forKeys:_keys];
     // transform to JSON
     NSError *error;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:questionDict
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:_questionDict
                                                        options:kNilOptions error:&error];
     // prepare the JSON request
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:_url
                                                            cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                        timeoutInterval:60.0];
     [request setHTTPMethod:@"POST"];
     [request setHTTPBody:jsonData];
     // send request
-    NSURLResponse * response = [[NSURLResponse alloc] init];
+    NSURLResponse *response = [[NSURLResponse alloc] init];
     NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
 
     // get the response
@@ -78,9 +65,9 @@
 //            for (NSString *key in content) {
 //                NSLog(@"%@",key);
 //            }
-        session_id = [content valueForKey:@"session_id"];
+        _session_id = [content valueForKey:@"session_id"];
         //test
-        NSLog(@"session id = %@",session_id);
+        NSLog(@"session id = %@",_session_id);
         
     }
     else {
@@ -88,15 +75,15 @@
     }
 }
 
--(void)isLoggedInWithID
+-(void)isLoggedInWithSessionID:(NSString *)aSID
 {
-    keys = @[sid,op];
-    objects = @[session_id,isLoggedIn];
-    questionDict = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
+    _keys = @[@"sid",@"op"];
+    _objects = @[aSID,@"isLoggedIn"];
+    _questionDict = [NSDictionary dictionaryWithObjects:_objects forKeys:_keys];
     NSError *error;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:questionDict
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:_questionDict
                                                        options:kNilOptions error:&error];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:_url
                                                            cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                        timeoutInterval:60.0];
     [request setHTTPMethod:@"POST"];
@@ -113,20 +100,20 @@
 }
 
 
--(void)stopConectionWithID
+-(void)stopConectionWithSessionID:(NSString *)aSID
 {
-    keys = @[sid,op];
-    objects = @[session_id,logout];
-    questionDict = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
+    _keys = @[@"sid",@"op"];
+    _objects = @[aSID,@"logout"];
+    _questionDict = [NSDictionary dictionaryWithObjects:_objects forKeys:_keys];
     NSError *error;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:questionDict
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:_questionDict
                                                        options:kNilOptions error:&error];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:_url
                                                            cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                        timeoutInterval:60.0];
     [request setHTTPMethod:@"POST"];
     [request setHTTPBody:jsonData];
-    NSURLResponse * response = [[NSURLResponse alloc] init];
+    NSURLResponse *response = [[NSURLResponse alloc] init];
     NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
     if (data != nil) {
         NSLog(@"stopConnection RESPONSE: %@",[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);;
@@ -140,15 +127,15 @@
 
 #pragma mark - methods
 
--(void)getCategoriesWithID
+-(void)getCategoriesWithSessionID:(NSString *)aSID
 {
-    keys = @[sid,op];
-    objects = @[session_id,getCategories];
-    questionDict = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
+    _keys = @[@"sid",@"op"];
+    _objects = @[aSID,@"getCategories"];
+    _questionDict = [NSDictionary dictionaryWithObjects:_objects forKeys:_keys];
     NSError *error;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:questionDict
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:_questionDict
                                                        options:kNilOptions error:&error];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:_url
                                                            cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                        timeoutInterval:60.0];
     [request setHTTPMethod:@"POST"];
@@ -164,16 +151,20 @@
         //test
 //		NSLog(@"contents count: %lu",[contents count]);
 //      NSLog(@"content 1 = %@",[contents objectAtIndex:0]);
-        categories = [[NSMutableArray alloc]init];
+        _categories = [[NSMutableArray alloc]init];
         for (NSDictionary *category in contents) {
-            //Create categoy object
+            //test
+            //NSLog(@"category: %@",category);
+            //Create category model object
             TTRSSCategoryModel *cat = [[TTRSSCategoryModel alloc]initWithDictionary:category];
             //add object to array
-            [categories addObject:cat];
-            NSLog(@"categoy added: %@",[cat title]);
+            [_categories addObject:cat];
+            //test
+            //NSLog(@"categoy added: %@",[cat title]);
+            //NSLog(@"Cat ID: %d",cat.catID);
         }
         //Test
-        NSLog(@"number of categories in Array: %lu",[categories count]);
+        NSLog(@"number of categories in Array: %d",[_categories count]);
         
     }
     else {
@@ -184,15 +175,15 @@
 
 
 
--(void)getFeedsWithID
+-(void)getFeedsWithSessionID:(NSString *)aSID catID:(NSInteger)aCatID
 {
-    keys = @[sid,op,@"cat_id"];
-    objects = @[session_id,getFeeds,@"-4"];
-    questionDict = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
+    _keys = @[@"sid",@"op",@"cat_id"];
+    _objects = @[aSID,@"getFeeds",[NSString stringWithFormat:@"%d",aCatID]];
+    _questionDict = [NSDictionary dictionaryWithObjects:_objects forKeys:_keys];
     NSError *error;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:questionDict
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:_questionDict
                                                        options:kNilOptions error:&error];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:_url
                                                            cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                        timeoutInterval:60.0];
     [request setHTTPMethod:@"POST"];
@@ -205,32 +196,32 @@
         NSDictionary *JSONObjects = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
         //test
         //NSLog(@"getFeeds Dict = %@",JSONObjects);
-        feeds = [[NSMutableArray alloc] init];
+        _feeds = [[NSMutableArray alloc] init];
         NSArray *contents = [JSONObjects objectForKey:@"content"];
         // test
-        NSLog(@"contents items: %lu",[contents count]);
+        NSLog(@"contents items: %d",[contents count]);
         for (NSDictionary *aFeeds in contents) {
             TTRSSFeedModel *feed = [[TTRSSFeedModel alloc] initWithDictionary:aFeeds];
-            [feeds addObject:feed];
-            NSLog(@"feed added: %@",[feed title]);
+            [_feeds addObject:feed];
+            NSLog(@"feed added: %@ withID: %d",[feed title],[feed feedID]);
         }
         //test
-        NSLog(@"\n\n\n\n number of feeds: %lu \n\n\n\n",[feeds count]);
+        NSLog(@"\n\n\n\n number of feeds: %d \n\n\n\n",[_feeds count]);
     }
     else {
         NSLog(@"Error: %@",error.localizedDescription);
     }
 }
 
--(void)getHeadlinesWithID
+-(void)getHeadlinesWithSessionID:(NSString *)aSID FeedID:(NSInteger)aFeedID
 {
-    keys = @[sid,op,@"feed_id"];
-    objects = @[session_id,getHeadlines,@"4"];
-    questionDict = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
+    _keys = @[@"sid",@"op",@"feed_id",@"limit"];
+    _objects = @[aSID,@"getHeadlines",[NSNumber numberWithInt:aFeedID],[NSNumber numberWithInt:50]];
+    _questionDict = [NSDictionary dictionaryWithObjects:_objects forKeys:_keys];
     NSError *error;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:questionDict
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:_questionDict
                                                        options:kNilOptions error:&error];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:_url
                                                            cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                        timeoutInterval:60.0];
     [request setHTTPMethod:@"POST"];
@@ -245,18 +236,18 @@
         //NSLog(@"getHeadlines Dict = %@",JSONObjects);
         NSArray *contents = [JSONObjects objectForKey:@"content"];
         //test
-        NSLog(@"content items: %lu",[contents count]);
-        headlines = [[NSMutableArray alloc]init];
+        NSLog(@"content items: %d",[contents count]);
+        _headlines = [[NSMutableArray alloc]init];
         
         for (NSDictionary *aHeadline in contents) {
             TTRSSHeadlinesModel *head = [[TTRSSHeadlinesModel alloc]initWithDictionary:aHeadline];
-            [headlines addObject:head];
+            [_headlines addObject:head];
             //test
             NSLog(@"headline title: %@",[head title]);
-            NSLog(@"articleID: %lu",[head articleID]);
+            NSLog(@"articleID: %d",[head articleID]);
         }
         //test
-        NSLog(@"\n\n\n\n number of headlines: %lu \n\n\n\n",[headlines count]);
+        NSLog(@"\n\n\n\n number of headlines: %d \n\n\n\n",[_headlines count]);
         
         
     }
@@ -265,15 +256,15 @@
     }
 }
 
--(void)getArticleWithID
+-(void)getArticleWithSessionID:(NSString *)aSID articleID:(NSInteger)aArticleID
 {
-    keys = @[sid,op,@"article_id"];
-    objects = @[session_id,getArticle,@"104"];
-    questionDict = [NSDictionary dictionaryWithObjects:objects forKeys:keys];
+    _keys = @[@"sid",@"op",@"article_id"];
+    _objects = @[aSID,@"getArticle",[NSNumber numberWithInt:aArticleID]];
+    _questionDict = [NSDictionary dictionaryWithObjects:_objects forKeys:_keys];
     NSError *error;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:questionDict
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:_questionDict
                                                        options:kNilOptions error:&error];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:_url
                                                            cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                        timeoutInterval:60.0];
     [request setHTTPMethod:@"POST"];
@@ -288,19 +279,50 @@
         //NSLog(@"article Dict = %@",JSONObjects);
         NSArray *contents = [JSONObjects objectForKey:@"content"];
         //test
-        NSLog(@"content items: %lu",[contents count]);
-        articleObject = [[NSMutableArray alloc]init];
+        NSLog(@"content items: %d",[contents count]);
+        _articleObject = [[NSMutableArray alloc]init];
         
         for (NSDictionary *aArticle in contents) {
             TTRSSArticleModel *article = [[TTRSSArticleModel alloc]initWithDictionary:aArticle];
-            [articleObject addObject:article];
+            [_articleObject addObject:article];
             //test
             NSLog(@"article content: %@",[article content]);
             NSLog(@"article link: %@",[article link]);
+            _articleContent = [NSString stringWithString:[article content]];
+            _articleContentCleaned = [NSString stringWithString:[article contentCleaned]];
+            
         }
-        
-       
-        
+    }
+    else {
+        NSLog(@"Error: %@",error.localizedDescription);
+    }
+}
+
+-(void)getConfigWithSessionID:(NSString *)aSID
+{
+    _keys = @[@"sid",@"op"];
+    _objects = @[aSID,@"getConfig"];
+    _questionDict = [NSDictionary dictionaryWithObjects:_objects forKeys:_keys];
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:_questionDict
+                                                       options:kNilOptions error:&error];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:_url
+                                                           cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                                       timeoutInterval:60.0];
+    [request setHTTPMethod:@"POST"];
+    [request setHTTPBody:jsonData];
+    NSURLResponse * response = [[NSURLResponse alloc] init];
+    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    if (data != nil) {
+        //test
+        //NSLog(@"getHeadlines RESPONSE: %@\n\n\n\n",[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);;
+        NSDictionary *JSONObjects = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+        //test
+        //NSLog(@"getConfig Dict = %@",JSONObjects);
+        NSArray *contents = [JSONObjects objectForKey:@"content"];
+        //test
+        NSLog(@"content items: %d",[contents count]);
+              
         
     }
     else {

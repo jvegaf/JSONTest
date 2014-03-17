@@ -31,7 +31,7 @@
 
 -(id)initWithDictionary:(NSDictionary *)aDict
 {
-    return [self initWithCatID:[[aDict objectForKey:@"catID"]intValue]
+    return [self initWithCatID:[[aDict objectForKey:@"id"]intValue]
                          title:[aDict objectForKey:@"title"]
                         unread:[[aDict objectForKey:@"unread"]intValue]
                        orderid:[[aDict objectForKey:@"orderID"]intValue]];

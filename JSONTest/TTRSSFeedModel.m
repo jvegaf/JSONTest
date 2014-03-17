@@ -37,13 +37,20 @@
 {
     return [self initWithFeedURL:[aDict objectForKey:@"feed_url"]
                            title:[aDict objectForKey:@"title"]
-                          feedID:[[aDict objectForKey:@"feed_id"]intValue]
+                          feedID:[[aDict objectForKey:@"id"]intValue]
                           unread:[[aDict objectForKey:@"unread"]intValue]
                          hasIcon:[[aDict objectForKey:@"has_icon"]boolValue]
                            catID:[[aDict objectForKey:@"cat_id"]intValue]
                      lastUpdated:[[aDict objectForKey:@"last_updated"]intValue]
                          orderID:[[aDict objectForKey:@"order_id"]intValue]];
 }
+
+//-(UIImage *)feedIcon
+//{
+//    //averiguar la ruta http
+//    
+//    
+//}
 
 
 @end
