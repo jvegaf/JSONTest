@@ -13,7 +13,6 @@
 @property (nonatomic,copy) NSString *author;
 @property (nonatomic,copy) NSString *comments;
 @property (nonatomic,copy) NSString *content;
-@property (nonatomic,copy) NSString *contentCleaned;
 @property (nonatomic) NSInteger feedID;
 @property (nonatomic,copy) NSString *feedTitle;
 @property (nonatomic) NSInteger articleID;
@@ -23,7 +22,6 @@
 -(id) initWithAuthor:(NSString *)aAuthor
             comments:(NSString *)aComments
              content:(NSString *)aContent
-      contentCleaned:(NSString *)contentC
               feedID:(NSInteger)aFeedID
            feedTitle:(NSString *)aFeedTitle
            articleID:(NSInteger)aArticleID

@@ -12,7 +12,6 @@
 
 @property (nonatomic,strong) NSArray *keys;
 @property (nonatomic,strong) NSArray *objects;
-@property (nonatomic,strong) NSDictionary *questionDict;
 @property (nonatomic,copy) NSString *session_id;
 @property (nonatomic,strong) NSURL *url;
 
@@ -21,7 +20,6 @@
 @property (nonatomic,strong) NSMutableArray *headlines;
 @property (nonatomic,strong) NSMutableArray *articleObject;
 @property (nonatomic,copy) NSString *articleContent;
-@property (nonatomic,copy) NSString *articleContentCleaned;
 @property (nonatomic,weak) NSUserDefaults *defaults;
 
 

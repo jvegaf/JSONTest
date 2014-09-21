@@ -13,7 +13,6 @@
 -(id) initWithAuthor:(NSString *)aAuthor
             comments:(NSString *)aComments
              content:(NSString *)aContent
-      contentCleaned:(NSString *)contentC
               feedID:(NSInteger)aFeedID
            feedTitle:(NSString *)aFeedTitle
            articleID:(NSInteger)aArticleID
@@ -24,7 +23,6 @@
         _author = aAuthor;
         _comments = aComments;
         _content = aContent;
-        _contentCleaned = contentC;
         _feedID = aFeedID;
         _feedTitle = aFeedTitle;
         _articleID = aArticleID;
@@ -40,7 +38,6 @@
     return [self initWithAuthor:[aDict objectForKey:@"author"]
                        comments:[aDict objectForKey:@"comments"]
                         content:[self formatedContent:[aDict objectForKey:@"content"] withTitle:[aDict objectForKey:@"title"]]
-                 contentCleaned:[aDict objectForKey:@"content"]
                          feedID:[[aDict objectForKey:@"feed_id"]intValue]
                       feedTitle:[aDict objectForKey:@"feed_title"]
                       articleID:[[aDict objectForKey:@"id"]intValue]
